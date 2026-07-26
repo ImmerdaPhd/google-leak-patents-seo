@@ -1,0 +1,47 @@
+SEO Skill by Missing Intent
+Copyright (c) 2026 Missing Intent (missingintent.com). All rights reserved.
+
+PERMITTED
+
+  You may install this skill and use it, including for commercial work such as
+  client projects, consulting, internal analysis, and content production. Output
+  you generate with it is yours.
+
+NOT PERMITTED WITHOUT WRITTEN PERMISSION
+
+  Redistribution of this skill or any substantial part of it, modified or
+  unmodified.
+  Republishing the bundled datasets, the reference documents, the playbooks, or
+  the extracted patent claim summaries as your own work or as part of another
+  product.
+  Selling, sublicensing, or bundling this skill into a paid product, dataset, or
+  service.
+  Training or fine-tuning models on the contents of this skill.
+
+  For permission, contact Missing Intent at missingintent.com.
+
+ATTRIBUTION
+
+  Public analysis or content derived from this skill should credit Missing
+  Intent (missingintent.com).
+
+SOURCE MATERIAL
+
+  This license covers the original work in this package: the cross-reference
+  analysis, the 12-stage pipeline documentation, the attribute classification,
+  the extracted patent claim summaries, the playbooks, the workflows, and the
+  scripts.
+
+  It does not and cannot apply to the underlying source material. Google patent
+  documents are public records published by the USPTO. The 2024 Content
+  Warehouse API documentation is Google's own material, reproduced here only as
+  short factual field descriptions for the purpose of commentary, research, and
+  analysis.
+
+NO WARRANTY
+
+  Provided as is, without warranty of any kind, express or implied. Nothing in
+  this package is a guarantee of search ranking outcomes. The leak is a 2024
+  snapshot of an internal API surface and may describe fields that are
+  experimental, deprecated, or never deployed. Patents describe methods, not
+  shipped products. Verify anything you intend to publish.

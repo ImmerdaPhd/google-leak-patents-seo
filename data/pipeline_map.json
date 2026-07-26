@@ -1,0 +1,676 @@
+{
+ "stages": {
+  "1. Crawling & Discovery": {
+   "description": "How Google discovers, fetches, and schedules re-crawls of web pages",
+   "leak_modules": [
+    "TrawlerFetchReplyData",
+    "TrawlerFetchReplyDataFetchStats",
+    "TrawlerFetchReplyDataRedirects",
+    "TrawlerHostBucketData",
+    "TrawlerPolicyData",
+    "TrawlerSSLCertificateInfo",
+    "TrawlerTCPIPInfo",
+    "TrawlerThrottleClientData",
+    "CrawlerChangerateUrlChangerate",
+    "CrawlerChangerateUrlHistory",
+    "CrawlerChangerateUrlChange",
+    "CrawlerChangerateUrlVersion",
+    "IndexingCrawlerIdServingDocumentIdentifier"
+   ],
+   "patent_keywords": [
+    "crawl",
+    "fetch",
+    "recrawl",
+    "crawl priority",
+    "crawl budget",
+    "crawl frequency",
+    "sitemap"
+   ],
+   "patent_nums": [
+    "US7308643B1",
+    "US7627613B1",
+    "US8037055B2",
+    "US8386459B1",
+    "US8782032B2",
+    "US9355177B2",
+    "US8458163B2",
+    "US8862569B2",
+    "US8140505B1",
+    "US7984054B2"
+   ]
+  },
+  "2. Document Processing & Indexing": {
+   "description": "How Google parses HTML, extracts content, and builds the index",
+   "leak_modules": [
+    "CompositeDoc",
+    "CompositeDocIndexingInfo",
+    "GDocumentBase",
+    "IndexingDocjoinerDataVersion",
+    "IndexingSignalAggregatorAggregatedScore",
+    "IndexingSignalAggregatorAgeWeightedCoverageData",
+    "IndexingEmbeddedContentPageSizeInfo",
+    "IndexingUrlPatternUrlTreeUrlTreeNode",
+    "GoodocDocumentPage",
+    "HtmlrenderWebkitHeadlessProtoRenderTreeNode"
+   ],
+   "patent_keywords": [
+    "index",
+    "parse",
+    "document",
+    "composite",
+    "render",
+    "embed"
+   ],
+   "patent_nums": [
+    "US7716225B1",
+    "US7308643B1",
+    "US7962462B1",
+    "US7627613B1",
+    "US7536408B2",
+    "US8549014B2",
+    "US9002867B1",
+    "US8782032B2",
+    "US8458163B2",
+    "US8140505B1",
+    "US8452766B1",
+    "US7984054B2",
+    "US10152520B1"
+   ]
+  },
+  "3. Content Quality & Site-Level Scoring": {
+   "description": "How Google scores content quality at page and site level \u2014 the Panda/Helpful Content system",
+   "leak_modules": [
+    "PerDocData",
+    "QualityNsrNsrData",
+    "QualityNsrPQData",
+    "CompressedQualitySignals",
+    "QualityNsrNsrDataMetadata",
+    "QualityCopiaFireflySiteSignal"
+   ],
+   "patent_keywords": [
+    "quality",
+    "panda",
+    "site quality",
+    "content quality",
+    "helpful content"
+   ],
+   "patent_nums": [
+    "US7962462B1",
+    "US9031929B1",
+    "US9760641B1",
+    "US8195654B1",
+    "US10133788B1"
+   ]
+  },
+  "4. Link Analysis & Authority Computation": {
+   "description": "How Google evaluates links, anchor text, and computes authority (PageRank, Reasonable Surfer, TrustRank)",
+   "leak_modules": [
+    "AnchorsAnchor",
+    "AnchorsAnchorSource",
+    "Anchors",
+    "AnchorsRedundantAnchorInfo",
+    "IndexingDocjoinerAnchorStatistics",
+    "IndexingDocjoinerAnchorSpamInfo",
+    "IndexingDocjoinerAnchorPhraseSpamInfo",
+    "KaltixPerDocData"
+   ],
+   "patent_keywords": [
+    "pagerank",
+    "link",
+    "anchor",
+    "trust",
+    "reasonable surfer"
+   ],
+   "patent_nums": [
+    "US6285999B1",
+    "US9165040B1",
+    "US7308643B1",
+    "US11354342B2",
+    "US7603350B1",
+    "US10268641B1",
+    "US9953049B1",
+    "US9400849B1",
+    "US10839029B2"
+   ]
+  },
+  "5. User Engagement & NavBoost (Click Signals)": {
+   "description": "How Google tracks clicks, dwell time, pogo-sticking, and uses them to re-rank results",
+   "leak_modules": [
+    "QualityNavboostCrapsCrapsClickSignals",
+    "QualityNavboostCrapsCrapsData",
+    "QualityNavboostCrapsFeatureCrapsData",
+    "QualityNavboostCrapsStatsWithWeightsProto"
+   ],
+   "patent_keywords": [
+    "click",
+    "navboost",
+    "user feedback",
+    "implicit",
+    "dwell",
+    "selection rate"
+   ],
+   "patent_nums": [
+    "US8661029B1",
+    "US8615514B1",
+    "US11816114B1",
+    "US9514194B1"
+   ]
+  },
+  "6. Entity & Knowledge Graph Integration": {
+   "description": "How Google extracts entities from pages and connects them to the Knowledge Graph",
+   "leak_modules": [
+    "RepositoryWebrefEntityJoin",
+    "RepositoryWebrefDocumentMetadata",
+    "RepositoryWebrefGlobalNameInfo",
+    "RepositoryWebrefGlobalLinkInfo",
+    "RepositoryWebrefWebrefEntities",
+    "RepositoryWebrefMention",
+    "RepositoryWebrefEntityNameScore",
+    "RepositoryWebrefCategoryInfo",
+    "RepositoryWebrefSimplifiedAnchor",
+    "RepositoryWebrefCompactKgTopic"
+   ],
+   "patent_keywords": [
+    "entity",
+    "knowledge graph",
+    "knowledge panel",
+    "webref"
+   ],
+   "patent_nums": [
+    "US9268820B2",
+    "US11836177B2",
+    "US10019495B2",
+    "US10270791B1",
+    "US12108314B2"
+   ]
+  },
+  "7. Freshness & Temporal Signals": {
+   "description": "How Google detects content dates, tracks updates, and applies temporal scoring",
+   "leak_modules": [
+    "QualityTimebasedSyntacticDate",
+    "QualityTimebasedLastSignificantUpdate",
+    "QualityTimebasedPageType",
+    "QualityTimebasedDateUnreliability",
+    "QualityTimebasedLastSignificantUpdateAdjustments",
+    "CrawlerChangerateUrlChangerate",
+    "PerDocData"
+   ],
+   "patent_keywords": [
+    "freshness",
+    "temporal",
+    "historical",
+    "update",
+    "date",
+    "time-sensitive"
+   ],
+   "patent_nums": [
+    "US9940367B1",
+    "US7346839B2",
+    "US8549014B2",
+    "US8924379B1",
+    "US10133809B1",
+    "US10003847B2",
+    "US11570512B2",
+    "US11109097B2"
+   ]
+  },
+  "8. Spam, Penalty & Trust Systems": {
+   "description": "How Google detects spam, gibberish, link manipulation, and applies penalties",
+   "leak_modules": [
+    "SpamBrainScore",
+    "SpamBrainData",
+    "SpamMuppetjoinsMuppetSignals",
+    "IndexingDocjoinerAnchorSpamInfo",
+    "PerDocData",
+    "CompressedQualitySignals",
+    "WeboftrustLiveResultDocBoostData"
+   ],
+   "patent_keywords": [
+    "spam",
+    "gibberish",
+    "trust",
+    "penalty",
+    "manipulat"
+   ],
+   "patent_nums": [
+    "US7603350B1",
+    "US8554769B1",
+    "US10268641B1"
+   ]
+  },
+  "9. Query Understanding & Intent Classification": {
+   "description": "How Google understands what the user is actually looking for",
+   "leak_modules": [
+    "QualityOrbitAsteroidBeltDocumentIntentScores",
+    "NlpSemanticParsingQRefAnnotation",
+    "NlpSaftDocument",
+    "PerDocData",
+    "QualityNsrNsrData"
+   ],
+   "patent_keywords": [
+    "query",
+    "intent",
+    "understanding",
+    "rewrit",
+    "autocomplete",
+    "word2vec",
+    "transformer",
+    "bert"
+   ],
+   "patent_nums": [
+    "US7962462B1",
+    "US7487145B1",
+    "US9037464B1",
+    "US10452978B2",
+    "US8819006B1",
+    "US9740780B1",
+    "US12499152B1",
+    "US8452766B1",
+    "US12499152B1",
+    "US12072898B1"
+   ]
+  },
+  "10. Snippet & Answer Extraction": {
+   "description": "How Google selects passages for featured snippets and generates search result descriptions",
+   "leak_modules": [
+    "SnippetExtraInfo",
+    "SnippetExtraInfoSnippetCandidateInfo",
+    "QualityPreviewSnippetRadishFeatures",
+    "QualityPreviewRanklabSnippet",
+    "QualityPreviewRanklabTitle",
+    "QualityPreviewSnippetQualityFeatures",
+    "QualityPreviewSnippetQueryFeatures",
+    "WWWSnippetResponse"
+   ],
+   "patent_keywords": [
+    "snippet",
+    "passage",
+    "answer",
+    "featured"
+   ],
+   "patent_nums": [
+    "US9940367B1",
+    "US9268820B2",
+    "US11409748B1",
+    "US8819006B1",
+    "US11836177B2",
+    "US10019495B2"
+   ]
+  },
+  "11. Re-Ranking & Twiddler System": {
+   "description": "How Google re-ranks results after initial scoring using boost/demotion multipliers",
+   "leak_modules": [
+    "CompressedQualitySignals",
+    "PerDocData",
+    "QualityNsrNsrData",
+    "IndexingSignalAggregatorAggregatedScore"
+   ],
+   "patent_keywords": [
+    "ranking",
+    "demotion",
+    "boost",
+    "promote",
+    "modify",
+    "adjust",
+    "filter"
+   ],
+   "patent_nums": [
+    "US6285999B1",
+    "US7716225B1",
+    "US9165040B1",
+    "US8661029B1",
+    "US8682892B1",
+    "US8195654B1",
+    "US9002867B1",
+    "US7603350B1",
+    "US11893034B2",
+    "US11816114B1",
+    "US11036804B1",
+    "US12298986B2",
+    "US10242112B2",
+    "US10031951B1",
+    "US10055463B1",
+    "US10268641B1",
+    "US10152520B1",
+    "US9953049B1",
+    "US10133809B1",
+    "US11893034B2",
+    "US12001496B1"
+   ]
+  },
+  "12. Personalization, Local & Context": {
+   "description": "How Google personalizes results based on location, device, history, and context",
+   "leak_modules": [
+    "LocalWWWInfo",
+    "LocalWWWInfoCluster",
+    "RepositoryAnnotationsGeoTopicality",
+    "SmartphonePerDocData",
+    "CountryCountryAttachment",
+    "PerDocData",
+    "QualityNsrNsrData",
+    "RepositoryWebrefPersonalizationContextOutputs"
+   ],
+   "patent_keywords": [
+    "personal",
+    "local",
+    "mobile",
+    "device",
+    "location",
+    "geo"
+   ],
+   "patent_nums": [
+    "US9165040B1",
+    "US11893034B2",
+    "US10248698B2",
+    "US11036804B1",
+    "US10031951B1",
+    "US9953049B1",
+    "US10839029B2",
+    "US11420059B1",
+    "US11547853B2",
+    "US12108314B2",
+    "US12158916B2",
+    "US11893034B2",
+    "US12001492B2"
+   ]
+  }
+ },
+ "topics": {
+  "Click Quality & NavBoost": {
+   "leak_modules": [
+    "QualityNavboostCrapsCrapsClickSignals",
+    "QualityNavboostCrapsCrapsData",
+    "QualityNavboostCrapsFeatureCrapsData",
+    "QualityNavboostCrapsStatsWithWeightsProto"
+   ],
+   "patent_categories": [
+    "Click & Engagement"
+   ],
+   "key_patents": [
+    "US8661029B1",
+    "US8615514B1",
+    "US7962462B1"
+   ]
+  },
+  "Site Authority & PageRank": {
+   "leak_modules": [
+    "QualityNsrNsrData",
+    "KaltixPerDocData",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Links & Anchors",
+    "Ranking & Scoring"
+   ],
+   "key_patents": [
+    "US6285999B1",
+    "US9165040B1"
+   ]
+  },
+  "Content Quality & Helpful Content": {
+   "leak_modules": [
+    "CompressedQualitySignals",
+    "QualityNsrPQData",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Content Quality",
+    "Ranking & Scoring"
+   ],
+   "key_patents": [
+    "US8682892B1",
+    "US9031929B1",
+    "US9760641B1",
+    "US8195654B1",
+    "US11354342B2"
+   ]
+  },
+  "Link Quality & Anchor Signals": {
+   "leak_modules": [
+    "AnchorsAnchor",
+    "AnchorsAnchorSource",
+    "Anchors",
+    "IndexingDocjoinerAnchorStatistics",
+    "IndexingDocjoinerAnchorSpamInfo",
+    "IndexingDocjoinerAnchorPhraseSpamInfo"
+   ],
+   "patent_categories": [
+    "Links & Anchors"
+   ],
+   "key_patents": [
+    "US6285999B1",
+    "US7716225B1",
+    "US9165040B1",
+    "US7308643B1"
+   ]
+  },
+  "Spam Detection & Penalties": {
+   "leak_modules": [
+    "PerDocData",
+    "CompressedQualitySignals",
+    "IndexingDocjoinerAnchorStatistics",
+    "SpamBrainScore",
+    "SpamBrainData",
+    "SpamMuppetjoinsMuppetSignals",
+    "IndexingDocjoinerAnchorSpamInfo"
+   ],
+   "patent_categories": [
+    "Spam & Penalties",
+    "Content Quality"
+   ],
+   "key_patents": [
+    "US8554769B1",
+    "US7603350B1"
+   ]
+  },
+  "Freshness & Content Updates": {
+   "leak_modules": [
+    "QualityTimebasedSyntacticDate",
+    "QualityTimebasedLastSignificantUpdate",
+    "QualityTimebasedPageType",
+    "QualityTimebasedDateUnreliability",
+    "PerDocData",
+    "CrawlerChangerateUrlChangerate",
+    "CrawlerChangerateUrlHistory"
+   ],
+   "patent_categories": [
+    "Freshness & Temporal"
+   ],
+   "key_patents": [
+    "US7346839B2",
+    "US8549014B2",
+    "US8924379B1",
+    "US9002867B1"
+   ]
+  },
+  "Entity & Knowledge Graph": {
+   "leak_modules": [
+    "RepositoryWebrefEntityJoin",
+    "RepositoryWebrefDocumentMetadata",
+    "RepositoryWebrefGlobalNameInfo",
+    "RepositoryWebrefGlobalLinkInfo",
+    "RepositoryWebrefWebrefEntities",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Entity & Knowledge Graph"
+   ],
+   "key_patents": [
+    "US9268820B2",
+    "US7565358B2"
+   ]
+  },
+  "Author & E-E-A-T": {
+   "leak_modules": [
+    "PerDocData",
+    "RepositoryWebrefEntityJoin"
+   ],
+   "patent_categories": [
+    "Author & E-E-A-T"
+   ],
+   "key_patents": [
+    "US7565358B2"
+   ]
+  },
+  "Snippets & Answers": {
+   "leak_modules": [
+    "SnippetExtraInfo",
+    "SnippetExtraInfoSnippetCandidateInfo",
+    "QualityPreviewSnippetRadishFeatures"
+   ],
+   "patent_categories": [
+    "Snippets & Answers"
+   ],
+   "key_patents": [
+    "US9940367B1"
+   ]
+  },
+  "Crawling & Indexing": {
+   "leak_modules": [
+    "IndexingDupsLocalizedLocalizedCluster",
+    "IndexingEmbeddedContentPageSizeInfo",
+    "IndexingCrawlerIdServingDocumentIdentifier",
+    "CompositeDocIndexingInfo",
+    "TrawlerFetchStatus",
+    "TrawlerThrottleClientData"
+   ],
+   "patent_categories": [
+    "Crawling & Indexing"
+   ],
+   "key_patents": [
+    "US7627613B1",
+    "US7536408B2",
+    "US8037055B2"
+   ]
+  },
+  "Local Search": {
+   "leak_modules": [
+    "LocalWWWInfo",
+    "LocalWWWInfoCluster",
+    "RepositoryAnnotationsGeoTopicality",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Local Search"
+   ],
+   "key_patents": []
+  },
+  "Sitelinks & Site Architecture": {
+   "leak_modules": [
+    "SdrPageAnchorsDocInfo",
+    "SdrPageAnchorsSitelink",
+    "QualitySitemapScoringSignals",
+    "QualitySitemapTarget",
+    "QualitySitemapBreadcrumbTarget",
+    "QualitySitemapTopURL",
+    "RepositoryAnnotationsRdfaBreadcrumbs"
+   ],
+   "patent_categories": [
+    "Site Architecture"
+   ],
+   "key_patents": [
+    "US8037055B2"
+   ]
+  },
+  "Mobile & Smartphone": {
+   "leak_modules": [
+    "SmartphonePerDocData",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Mobile & App"
+   ],
+   "key_patents": []
+  },
+  "Chrome & UX Signals": {
+   "leak_modules": [
+    "QualityNsrNsrData",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Click & Engagement"
+   ],
+   "key_patents": [
+    "US8661029B1"
+   ]
+  },
+  "YMYL & Special Authority": {
+   "leak_modules": [
+    "QualityNsrNsrData",
+    "CompressedQualitySignals",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Content Quality"
+   ],
+   "key_patents": []
+  },
+  "Product Reviews & Shopping": {
+   "leak_modules": [
+    "CompressedQualitySignals",
+    "QualityProductProductSiteData"
+   ],
+   "patent_categories": [
+    "Shopping & Products"
+   ],
+   "key_patents": []
+  },
+  "Salient Terms & Topical Relevance": {
+   "leak_modules": [
+    "QualitySalientTermsSalientTermSet",
+    "QualitySalientTermsSignalData",
+    "QualitySalientTermsDocData",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Query Understanding",
+    "Content Quality"
+   ],
+   "key_patents": [
+    "US7536408B2",
+    "US9037464B1"
+   ]
+  },
+  "Duplicate Detection & Canonicalization": {
+   "leak_modules": [
+    "IndexingDupsLocalizedLocalizedCluster",
+    "ShingleInfoPerDocData",
+    "PerDocData",
+    "CompositeDocIndexingInfo"
+   ],
+   "patent_categories": [
+    "Crawling & Indexing"
+   ],
+   "key_patents": [
+    "US7627613B1"
+   ]
+  },
+  "News & Fresh Content": {
+   "leak_modules": [
+    "PerDocData",
+    "QualityDniExtendedNewsPreviews",
+    "QualityFringeFringeQueryPriorPerDocData"
+   ],
+   "patent_categories": [
+    "News & Top Stories"
+   ],
+   "key_patents": [
+    "US8924379B1"
+   ]
+  },
+  "Intent Classification": {
+   "leak_modules": [
+    "QualityOrbitAsteroidBeltDocumentIntentScores",
+    "PerDocData"
+   ],
+   "patent_categories": [
+    "Query Understanding"
+   ],
+   "key_patents": [
+    "US7487145B1",
+    "US9037464B1",
+    "US10452978B2"
+   ]
+  }
+ }
+}
