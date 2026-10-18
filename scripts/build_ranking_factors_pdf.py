@@ -125,12 +125,13 @@ def styles():
 
 
 class Doc(BaseDocTemplate):
-    def __init__(self, path, **kw):
+    def __init__(self, path, title="Google Ranking-Faktoren",
+                 subject="848 Ranking-Signale aus dem Google-Content-Warehouse-Leak 2024",
+                 footer="Google Ranking-Faktoren – Content Warehouse Leak 2024", **kw):
         super().__init__(path, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm,
                          topMargin=18 * mm, bottomMargin=18 * mm,
-                         title="Google Ranking-Faktoren", author="google-leak-patents-seo",
-                         subject="848 Ranking-Signale aus dem Google-Content-Warehouse-Leak 2024",
-                         **kw)
+                         title=title, author="google-leak-patents-seo", subject=subject, **kw)
+        self.footer = footer
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height, id="f")
         self.addPageTemplates([PageTemplate(id="p", frames=[frame], onPage=self.decorate)])
 
@@ -140,7 +141,7 @@ class Doc(BaseDocTemplate):
         canvas.saveState()
         canvas.setFont("Sans", 7.5)
         canvas.setFillColor(MUTED)
-        canvas.drawString(self.leftMargin, 10 * mm, "Google Ranking-Faktoren – Content Warehouse Leak 2024")
+        canvas.drawString(self.leftMargin, 10 * mm, self.footer)
         canvas.drawRightString(A4[0] - self.rightMargin, 10 * mm, f"Seite {doc.page}")
         canvas.restoreState()
 
