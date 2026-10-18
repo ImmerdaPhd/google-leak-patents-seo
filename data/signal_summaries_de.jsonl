@@ -1,0 +1,848 @@
+{"module": "QualityNsrNsrData", "name": "titlematchScore", "summary_de": "Wie gut die Seitentitel der Website zu den Suchanfragen passen, die Nutzer eintippen."}
+{"module": "QualityNsrNsrData", "name": "site2vecEmbeddingEncoded", "summary_de": "Eine komprimierte Vektordarstellung der Website für den Einsatz beim Ausliefern der Suchergebnisse."}
+{"module": "QualityNsrNsrData", "name": "smallPersonalSite", "summary_de": "Ein Förderwert für kleine persönliche Websites und Blogs."}
+{"module": "QualityNsrNsrData", "name": "pnavClicks", "summary_de": "Die Klickzahl, die als Nenner des pnav-Anteils (navigationale Klicks) dient."}
+{"module": "QualityNsrNsrData", "name": "siteAutopilotScore", "summary_de": "Der websiteweite Gesamtwert der einzelnen „Autopilot“-Scores der Seiten."}
+{"module": "QualityNsrNsrData", "name": "isVideoFocusedSite", "summary_de": "Ob die meisten Seiten der Website Video-Ansichtsseiten (Watch Pages) sind."}
+{"module": "QualityNsrNsrData", "name": "chromeInTotal", "summary_de": "Wie viel Besuchertraffic die Website insgesamt laut Chrome-Daten erhält."}
+{"module": "QualityNsrNsrData", "name": "chardScoreVariance", "summary_de": "Wie stark die vorhergesagte Inhaltsqualität zwischen den Seiten der Website schwankt."}
+{"module": "QualityNsrNsrData", "name": "chardScoreEncoded", "summary_de": "Versionierte, websiteweite Vorhersagewerte der Inhaltsqualität (Chard)."}
+{"module": "QualityNsrNsrData", "name": "localityScore", "summary_de": "Wie lokal die Website ist – der Lokalitätsanteil eines Signals für lokale Autorität."}
+{"module": "QualityNsrNsrData", "name": "chardEncoded", "summary_de": "Ein websiteweiter, vorhergesagter Inhaltsqualitätswert (Chard), als Ganzzahl gespeichert."}
+{"module": "QualityNsrNsrData", "name": "tofu", "summary_de": "Eine websiteweite, inhaltsbasierte Qualitätsvorhersage (Tofu)."}
+{"module": "QualityNsrNsrData", "name": "siteLinkOut", "summary_de": "Der zusammengefasste Score der ausgehenden Links aller Seiten der Website."}
+{"module": "QualityNsrNsrData", "name": "nsrOverrideBid", "summary_de": "Ein manuell gesetzter Wert, der den Website-Qualitätsscore (NSR) im Ranking ersetzt, wenn er gesetzt ist – nur für Notfälle."}
+{"module": "QualityNsrNsrData", "name": "isCovidLocalAuthority", "summary_de": "Ob die Website als lokale Autorität für COVID-Informationen gilt."}
+{"module": "QualityNsrNsrData", "name": "pnav", "summary_de": "Ein Anteil auf Website-Ebene, der das navigationale Klickverhalten beschreibt."}
+{"module": "QualityNsrNsrData", "name": "siteQualityStddev", "summary_de": "Wie weit die Qualitätsbewertungen der einzelnen Seiten innerhalb der Website auseinanderliegen."}
+{"module": "QualityNsrNsrData", "name": "impressions", "summary_de": "Wie oft Seiten der Website in den Suchergebnissen angezeigt wurden (Impressionen)."}
+{"module": "QualityNsrNsrData", "name": "vlq", "summary_de": "Ein Score aus einem Modell, das minderwertige Video-Websites erkennt."}
+{"module": "QualityNsrNsrData", "name": "racterScores", "summary_de": "Scores auf Website-Ebene von einem Klassifikator für automatisch generierte Inhalte (Projekt Racter)."}
+{"module": "QualityNsrNsrData", "name": "spambrainLavcScore", "summary_de": "Ein Spam-Score auf Website-Ebene, erzeugt vom SpamBrain-System."}
+{"module": "QualityNsrNsrData", "name": "articleScore", "summary_de": "Wie artikelartig die Inhalte der Website laut einem Klassifikator sind."}
+{"module": "QualityNsrNsrData", "name": "site2vecEmbedding", "summary_de": "Eine Vektordarstellung (Embedding) der Website (site2vec)."}
+{"module": "QualityNsrNsrData", "name": "versionedData", "summary_de": "Pro Version gespeicherte Website-Qualitätswerte, um neue Releases zu testen."}
+{"module": "QualityNsrNsrData", "name": "siteLinkIn", "summary_de": "Der durchschnittliche Score der eingehenden Links der Seiten dieser Website."}
+{"module": "QualityNsrNsrData", "name": "ketoVersionedData", "summary_de": "Die Keto-Qualitätswerte der Website über mehrere Versionen hinweg."}
+{"module": "QualityNsrNsrData", "name": "isElectionAuthority", "summary_de": "Ob die Website als Autorität zum Thema Wahlen gilt."}
+{"module": "QualityNsrNsrData", "name": "priorAdjustedNsr", "summary_de": "Wie weit die Qualität der Website über oder unter dem Durchschnitt ihrer Vergleichsgruppe liegt."}
+{"module": "QualityNsrNsrData", "name": "healthScore", "summary_de": "Ein Score auf Website-Ebene innerhalb der kategorialen Gruppe „Gesundheit“."}
+{"module": "QualityNsrNsrData", "name": "clutterScore", "summary_de": "Eine Abwertung auf Website-Ebene für das Laden vieler störender oder lästiger Zusatzressourcen."}
+{"module": "QualityNsrNsrData", "name": "vlqNsr", "summary_de": "Ein Website-Qualitätswert (NSR) aus einem Modell, das auf minderwertige Video-Websites zielt."}
+{"module": "PerDocData", "name": "videoLanguage", "summary_de": "Die gesprochene Sprache des Videos einer Watch Page, erkannt aus der Tonspur."}
+{"module": "PerDocData", "name": "uacSpamScore", "summary_de": "Ein Spam-Score von 0–127; ab 64 gilt die Seite als UAC-Spam (Spam in nutzergenerierten Inhalten)."}
+{"module": "PerDocData", "name": "spamtokensContentScore", "summary_de": "Ein Inhaltsscore, mit dem entschieden wird, ob eine Seite Spam in nutzergenerierten Inhalten ist."}
+{"module": "PerDocData", "name": "webrefEntities", "summary_de": "Die WebRef-Entitäten, von denen das Dokument handelt."}
+{"module": "PerDocData", "name": "spamMuppetSignals", "summary_de": "Signale darüber, ob die Website gehackt wurde; werden zur Abfragezeit hinzugezogen."}
+{"module": "PerDocData", "name": "knexAnnotation", "summary_de": "Gespeicherte k'nex-Annotationen, die an frische Dokumente angehängt werden."}
+{"module": "PerDocData", "name": "trendspamScore", "summary_de": "Für wie viele Trending-Spam-Suchanfragen das Dokument passt."}
+{"module": "PerDocData", "name": "ScaledSpamScoreYoram", "summary_de": "Ein Spam-Score von 0–127 für das Dokument nach dem „Yoram“-Schema."}
+{"module": "PerDocData", "name": "datesInfo", "summary_de": "Kodierte Informationen über die Datumsangaben der Seite, z. B. ob sie alt wirken."}
+{"module": "PerDocData", "name": "nsrDataProto", "summary_de": "Ein Container für Website-Qualitätssignale, die nicht in den separaten NSR-Feldern liegen."}
+{"module": "PerDocData", "name": "fringeQueryPrior", "summary_de": "Kodierte Vorannahme über „Fringe“-Anfragen (Rand- bzw. Verschwörungsthemen) für dieses Dokument."}
+{"module": "PerDocData", "name": "ymylHealthScore", "summary_de": "Ein Klassifikator-Score, wie sehr die Seite sensible Gesundheitsinhalte enthält."}
+{"module": "PerDocData", "name": "lastSignificantUpdate", "summary_de": "Der Zeitstempel der letzten bedeutsamen Änderung des Dokuments."}
+{"module": "PerDocData", "name": "spambrainData", "summary_de": "SpamBrain-Scores, berechnet auf Host-Ebene für diese Website."}
+{"module": "PerDocData", "name": "homepagePagerankNs", "summary_de": "Der PageRank der Startseite der Website, auf dieses Dokument übertragen."}
+{"module": "PerDocData", "name": "topPetacatTaxId", "summary_de": "Die Hauptthemenkategorie der Website, um zu prüfen, wie gut ein Ergebnis zur Anfrage passt."}
+{"module": "PerDocData", "name": "OriginalContentScore", "summary_de": "Ein Score dafür, wie originell der Inhalt der Seite ist; nur bei Seiten mit wenig Inhalt gespeichert."}
+{"module": "PerDocData", "name": "DocLevelSpamScore", "summary_de": "Ein Spam-Score von 0–127 für das einzelne Dokument."}
+{"module": "PerDocData", "name": "urlPoisoningData", "summary_de": "Daten über URL-Poisoning, mit denen Spam-Dokumente zurückgehalten werden."}
+{"module": "PerDocData", "name": "scaledSelectionTierRank", "summary_de": "Ein Wert von 0–32767, der die Position des Dokuments innerhalb seiner Index-Serving-Stufe angibt."}
+{"module": "PerDocData", "name": "QuarantineInfo", "summary_de": "Eine Bitmaske mit Quarantäne-Flags für das Dokument, z. B. „Whitelist“ oder „URL-in-URL“."}
+{"module": "PerDocData", "name": "rosettaLanguages", "summary_de": "Die zwei wichtigsten Sprachcodes der Seite laut Rosetta-Spracherkennung."}
+{"module": "PerDocData", "name": "queriesForWhichOfficial", "summary_de": "Die Kombinationen aus Anfrage, Land und Sprache, für die diese Seite als offizielle Seite gilt."}
+{"module": "PerDocData", "name": "v2KnexAnnotation", "summary_de": "Gespeicherte k'nex-Annotationen der zweiten Generation für das Dokument."}
+{"module": "PerDocData", "name": "BookCitationData", "summary_de": "Buchzitat-Informationen, die einer Webseite zugeordnet sind (ca. zehn Bytes pro Seite)."}
+{"module": "PerDocData", "name": "semanticDate", "summary_de": "Ein geschätztes Datum für den Seiteninhalt, abgeleitet aus Seite, Ankertexten und verwandten Seiten."}
+{"module": "PerDocData", "name": "biasingdata2", "summary_de": "Ein platzsparenderer Container für dokumentbezogene Gewichtungsdaten (Biasing)."}
+{"module": "PerDocData", "name": "ymylNewsScore", "summary_de": "Ein Klassifikator-Score, wie sehr die Seite Nachrichteninhalte zu einem sensiblen Thema enthält."}
+{"module": "PerDocData", "name": "saftLanguageInt", "summary_de": "Die Hauptsprache der Seite laut einem zweiten Spracherkenner; gespeichert, wenn sie abweicht."}
+{"module": "PerDocData", "name": "domainAge", "summary_de": "Das Alter der Domain, als 16-Bit-Wert gespeichert."}
+{"module": "PerDocData", "name": "lastSignificantUpdateInfo", "summary_de": "Zusatzinfo, woher der Zeitstempel der letzten bedeutsamen Aktualisierung stammt."}
+{"module": "PerDocData", "name": "spamCookbookAction", "summary_de": "Aktionen, die ausgelöst werden, wenn die Seite einem Spam-„Kochbuch“-Rezept entspricht."}
+{"module": "PerDocData", "name": "pageregions", "summary_de": "Eine kodierte Karte, wo die verschiedenen Bereiche der Seite beginnen und enden."}
+{"module": "PerDocData", "name": "KeywordStuffingScore", "summary_de": "Ein Score von 0–127, wie stark die Seite Keywords unnatürlich wiederholt (Keyword-Stuffing)."}
+{"module": "PerDocData", "name": "spambrainTotalDocSpamScore", "summary_de": "Der Gesamt-Spam-Score von SpamBrain für das Dokument, von 0 bis 1."}
+{"module": "PerDocData", "name": "spamrank", "summary_de": "Ein Maß von 0–65535, wie wahrscheinlich die Seite auf bekannte Spammer verlinkt."}
+{"module": "PerDocData", "name": "s3AudioLanguage", "summary_de": "Die gesprochene Sprache des Hauptvideos einer Watch Page, erkannt aus der Tonspur."}
+{"module": "PerDocData", "name": "watchpageLanguageResult", "summary_de": "Die Sprache einer Watch Page laut einem eigenen Modell."}
+{"module": "PerDocData", "name": "desktopInterstitials", "summary_de": "Ein Signal zu Interstitials (Overlays) auf dem Desktop, genutzt von der Ranking-Änderung VOLT."}
+{"module": "PerDocData", "name": "originalTitleHardTokenCount", "summary_de": "Wie viele „harte“ Tokens (Wörter) der ursprüngliche Titel enthielt."}
+{"module": "PerDocData", "name": "hostAge", "summary_de": "Das früheste Datum, an dem eine Seite dieses Hosts gesehen wurde – zum „Sandboxing“ von frischem Spam."}
+{"module": "PerDocData", "name": "eventsDate", "summary_de": "Die Startdaten der auf der Seite gelisteten Veranstaltungen, ein Datum pro Event."}
+{"module": "PerDocData", "name": "GibberishScore", "summary_de": "Ein Score von 0–127, wie viel des Seitentexts sinnloser Text (Gibberish) ist."}
+{"module": "PerDocData", "name": "toolbarPagerank", "summary_de": "Eine gespeicherte Kopie des 0–10-Toolbar-PageRanks der Seite."}
+{"module": "PerDocData", "name": "freshboxArticleScores", "summary_de": "Gepackte Scores aus Freshness-Klassifikatoren, z. B. für Nachrichtenartikel und Liveblogs."}
+{"module": "PerDocData", "name": "onsiteProminence", "summary_de": "Wie wichtig die Seite innerhalb der eigenen Website ist, ermittelt aus simuliertem Traffic."}
+{"module": "PerDocData", "name": "travelGoodSitesInfo", "summary_de": "Gespeicherte Informationen über als gut bewertete Reise-Websites."}
+{"module": "PerDocData", "name": "IsAnchorBayesSpam", "summary_de": "Flag: Der Bayes-Klassifikator für Ankertexte hat das Dokument als Spam eingestuft."}
+{"module": "PerDocData", "name": "isHotdoc", "summary_de": "Flag aus der Frische-Pipeline, das dieses Dokument als aktuell „heiß“ markiert."}
+{"module": "PerDocData", "name": "commercialScore", "summary_de": "Ein Score, wie kommerziell die Seite ist; über null bedeutet: sie verkauft etwas."}
+{"module": "PerDocData", "name": "asteroidBeltIntents", "summary_de": "Gespeicherte Intent-Scores des Dokuments aus dem Projekt „Asteroid Belt“."}
+{"module": "PerDocData", "name": "TagPageScore", "summary_de": "Ein Score von 0–100, wie sehr die Seite einer dünnen Tag-Übersichtsseite ähnelt (niedriger = schlechter)."}
+{"module": "PerDocData", "name": "geodata", "summary_de": "Ein kompakter Datenblock mit geografischen Informationen zur Seite."}
+{"module": "PerDocData", "name": "SpamWordScore", "summary_de": "Ein Score von 0–127, wie viele Spam-Wörter auf der Seite vorkommen."}
+{"module": "PerDocData", "name": "ScaledIndyRank", "summary_de": "Ein „Independence Rank“, als 16-Bit-Zahl gespeichert und auf den echten Wert zurückskaliert."}
+{"module": "PerDocData", "name": "bodyWordsToTokensRatioBegin", "summary_de": "Das Verhältnis echter Wörter zu Tokens im Anfangsteil des Seiteninhalts."}
+{"module": "PerDocData", "name": "fireflySiteSignal", "summary_de": "Website-Signaldaten, die von der Ranking-Änderung „Firefly“ genutzt werden."}
+{"module": "PerDocData", "name": "titleHardTokenCountWithoutStopwords", "summary_de": "Wie viele „harte“ Tokens der Titel ohne Stoppwörter enthält."}
+{"module": "PerDocData", "name": "semanticDateInfo", "summary_de": "Gepackte Konfidenz und Metadaten zum geschätzten Seitendatum, genutzt beim Freshness-Reranking."}
+{"module": "PerDocData", "name": "languages", "summary_de": "Die wahrscheinlichen Sprachen der Seite, die wahrscheinlichste zuerst."}
+{"module": "PerDocData", "name": "countryInfo", "summary_de": "Die für das Dokument erfasste Länderinformation."}
+{"module": "PerDocData", "name": "brainloc", "summary_de": "Die dem Dokument zugeordneten Standortinformationen."}
+{"module": "PerDocData", "name": "ScaledLinkAgeSpamScore", "summary_de": "Ein Score von 0–127 basierend auf dem Alter der Links, die auf die Seite zeigen."}
+{"module": "PerDocData", "name": "productSitesInfo", "summary_de": "Gespeicherte Informationen über Produkt-Websites."}
+{"module": "PerDocData", "name": "spambrainDomainSitechunkData", "summary_de": "SpamBrain-Scores, berechnet auf Domain-Ebene für diese Website."}
+{"module": "PerDocData", "name": "voltData", "summary_de": "Page-Experience-Signale, genutzt von der Ranking-Änderung VOLT."}
+{"module": "PerDocData", "name": "timeSensitivity", "summary_de": "Ein kodiertes Maß, wie zeitkritisch (zeitabhängig) das Dokument ist."}
+{"module": "CompressedQualitySignals", "name": "ugcDiscussionEffortScore", "summary_de": "Ein Score für den Aufwand hinter nutzergenerierten Diskussionsinhalten auf der Seite."}
+{"module": "CompressedQualitySignals", "name": "experimentalQstarDeltaSignal", "summary_de": "Ein experimenteller Wert, der eine Änderung an einem Q*-Scoringsignal misst."}
+{"module": "CompressedQualitySignals", "name": "productReviewPDemoteSite", "summary_de": "Ein Konfidenzwert, um eine Website bei Produktbewertungen ab- oder aufzuwerten."}
+{"module": "CompressedQualitySignals", "name": "experimentalQstarSiteSignal", "summary_de": "Ein experimenteller Wert auf Website-Ebene, der im Q*-Scoring getestet wird."}
+{"module": "CompressedQualitySignals", "name": "exactMatchDomainDemotion", "summary_de": "Eine gespeicherte Abwertung für Domains, die exakt den Suchbegriffen entsprechen (Exact-Match-Domains)."}
+{"module": "CompressedQualitySignals", "name": "lowQuality", "summary_de": "Ein Niedrigqualitäts-Score der Website, angewendet im Q*-Scoring."}
+{"module": "CompressedQualitySignals", "name": "navDemotion", "summary_de": "Eine gespeicherte Abwertung für Seiten, die das navigationale Demotion-System markiert hat."}
+{"module": "CompressedQualitySignals", "name": "pqData", "summary_de": "Kodierte Seitenqualitätssignale auf Seitenebene."}
+{"module": "CompressedQualitySignals", "name": "siteAuthority", "summary_de": "Ein Autoritätsscore auf Website-Ebene (siteAuthority), angewendet im Q*-Scoring."}
+{"module": "CompressedQualitySignals", "name": "crapsNewUrlSignals", "summary_de": "Klick- und Impressionsdaten auf URL-Ebene für das Craps-System."}
+{"module": "CompressedQualitySignals", "name": "babyPandaV2Demotion", "summary_de": "Eine neuere Qualitätsabwertung, die zusätzlich zur Panda-Abwertung greift."}
+{"module": "CompressedQualitySignals", "name": "authorityPromotion", "summary_de": "Ein gespeicherter Aufwertungswert, der als autoritativ eingestufte Seiten anhebt."}
+{"module": "CompressedQualitySignals", "name": "productReviewPUhqPage", "summary_de": "Die geschätzte Wahrscheinlichkeit, dass die Seite eine hochwertige Review-Seite ist."}
+{"module": "CompressedQualitySignals", "name": "crapsAbsoluteHostSignals", "summary_de": "Rohe Impressionszahlen auf Host-Ebene für das Klick- und Impressionssystem Craps."}
+{"module": "CompressedQualitySignals", "name": "babyPandaDemotion", "summary_de": "Ein gespeicherter Qualitäts-Abwertungswert aus der Panda-Familie."}
+{"module": "CompressedQualitySignals", "name": "serpDemotion", "summary_de": "Ein Abwertungswert, der im Q*-Scoring auf die Seite angewendet wird."}
+{"module": "CompressedQualitySignals", "name": "anchorMismatchDemotion", "summary_de": "Ein gespeicherter Abwertungswert für Seiten, deren Ankertext nicht zur Seite passt (Anchor Mismatch)."}
+{"module": "CompressedQualitySignals", "name": "experimentalQstarSignal", "summary_de": "Ein experimenteller Wert auf Seitenebene, der im Q*-Scoring getestet wird."}
+{"module": "CompressedQualitySignals", "name": "topicEmbeddingsVersionedData", "summary_de": "Versionierte Themen-Embeddings der Seite, die Scorer direkt lesen können."}
+{"module": "CompressedQualitySignals", "name": "scamness", "summary_de": "Ein Modellscore, wie betrügerisch (scam-artig) die Seite wirkt; fließt in die Qualitätsbewertung ein."}
+{"module": "CompressedQualitySignals", "name": "pandaDemotion", "summary_de": "Die kodierte Panda-Abwertung der Website-Qualität für diese Seite."}
+{"module": "CompressedQualitySignals", "name": "unauthoritativeScore", "summary_de": "Ein Score, wie wenig autoritativ die Seite wirkt; fließt in die Qualitätsbewertung ein."}
+{"module": "CompressedQualitySignals", "name": "experimentalNsrTeamWsjData", "summary_de": "Ein zweiter experimenteller Datensatz zur Website-Qualität vom Site-Quality-Team."}
+{"module": "CompressedQualitySignals", "name": "experimentalNsrTeamData", "summary_de": "Experimentelle Website-Qualitätsdaten des Site-Quality-Teams."}
+{"module": "CompressedQualitySignals", "name": "productReviewPReviewPage", "summary_de": "Die geschätzte Wahrscheinlichkeit, dass die Seite eine Produkt-Review-Seite ist."}
+{"module": "CompressedQualitySignals", "name": "pqDataProto", "summary_de": "Qualitätssignale auf Seitenebene, die außerhalb des kodierten Seitenqualitätsfelds liegen."}
+{"module": "QualityNavboostCrapsCrapsClickSignals", "name": "absoluteImpressions", "summary_de": "Wie oft Ergebnisse dieses Hosts angezeigt wurden (rohe Zählung)."}
+{"module": "QualityNavboostCrapsCrapsClickSignals", "name": "unicornClicks", "summary_de": "Der Anteil der Klicks, der einer bestimmten internen Klasse von Nutzersitzungen zugeordnet ist."}
+{"module": "QualityNsrPQData", "name": "chard", "summary_de": "Ein vorhergesagter Inhaltsqualitätsscore auf Seitenebene (Chard)."}
+{"module": "QualityNsrPQData", "name": "chardScoreEncoded", "summary_de": "Versionierte, vorhergesagte Inhaltsqualitätsscores auf Seitenebene."}
+{"module": "QualityNsrPQData", "name": "contentEffort", "summary_de": "Eine Modellschätzung, wie viel Aufwand in die Erstellung des Seiteninhalts geflossen ist (Effort)."}
+{"module": "QualityNsrPQData", "name": "deltaSubchunkAdjustment", "summary_de": "Eine seitenbezogene Anpassung der Website-Qualität anhand der Themengruppe der Seite."}
+{"module": "QualityNsrPQData", "name": "keto", "summary_de": "Der Keto-Qualitätsscore der Seite."}
+{"module": "QualityNsrPQData", "name": "numOffdomainAnchors", "summary_de": "Wie viele Links auf diese Seite von anderen Domains kommen."}
+{"module": "QualityNsrPQData", "name": "predictedDefaultNsr", "summary_de": "Ein vorhergesagter Standard-Website-Qualitätsscore, berechnet für die Seite."}
+{"module": "QualityNsrPQData", "name": "rhubarb", "summary_de": "Ein Seitenqualitätsscore, der darauf beruht, wie stark sich die Seite von ihrer Website unterscheidet."}
+{"module": "QualityNsrPQData", "name": "tofu", "summary_de": "Eine inhaltsbasierte Qualitätsvorhersage auf Seitenebene (Tofu)."}
+{"module": "QualityNsrPQData", "name": "unversionedRhubarb", "summary_de": "Der Differenz-Score des Qualitätsvorhersagers auf Seitenebene."}
+{"module": "QualityNsrPQData", "name": "vlq", "summary_de": "Der Score der Seite aus dem Modell für minderwertige Videos."}
+{"module": "QualityTimebasedSyntacticDate", "name": "bylineDate", "summary_de": "Das Byline-Datum (Autorendatum); gespeichert, wenn es vom Hauptdatum der Seite abweicht."}
+{"module": "QualityTimebasedSyntacticDate", "name": "date", "summary_de": "Das Veröffentlichungsdatum der Seite in Sekunden seit 1970."}
+{"module": "QualityTimebasedSyntacticDate", "name": "info", "summary_de": "Flag-Bits, ob das Byline-Datum als sehr verlässlich gilt."}
+{"module": "QualityTimebasedSyntacticDate", "name": "precisionMark", "summary_de": "Wie genau das extrahierte Datum ist, z. B. Tag, Monat oder Jahr."}
+{"module": "QualityTimebasedSyntacticDate", "name": "timeZoneOffsetSeconds", "summary_de": "Die Zeitzonenverschiebung in Sekunden, die bei der Datumsermittlung angewendet wird."}
+{"module": "QualityTimebasedLastSignificantUpdate", "name": "date", "summary_de": "Der Zeitpunkt, zu dem sich die Seite zuletzt bedeutsam geändert hat."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "badbacklinksPenalized", "summary_de": "Ob die Seite wegen schlechter Backlinks abgestraft wurde, was ihren Anker-Score unterdrückt."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "penguinPenalty", "summary_de": "Die Penguin-Linkspam-Abstrafung auf Seitenebene, von 0 (gut) bis 1 (schlecht)."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "minHostHomePageLocalOutdegree", "summary_de": "Kleinste Zahl ausgehender Links unter den verlinkenden Startseiten desselben Hosts."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "droppedRedundantAnchorCount", "summary_de": "Wie viele Anker als redundant verworfen wurden."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "penguinEarlyAnchorProtected", "summary_de": "Ob frühe, gute Anker die Seite vor einer Linkabstrafung schützen."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "penguinTooManySources", "summary_de": "Ob die Seite unbewertet blieb, weil zu viele Quellen auf sie verlinkten."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "anchorSpamInfo", "summary_de": "Bündel aus Ankerspam-Signalen und -Abstrafungen für die Seite."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "minDomainHomePageLocalOutdegree", "summary_de": "Kleinste Zahl ausgehender Links unter den verlinkenden Startseiten derselben Domain."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "topPrOnsiteAnchorCount", "summary_de": "Wie viele Anker mit hohem PageRank von derselben Website auf die Seite zeigen."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "spamLog10Odds", "summary_de": "Log-Odds-Score, dass die Ankermenge der Seite spammig aussieht."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "pageFromExpiredTaggedAnchors", "summary_de": "Zahl der Anker von Seiten, die als abgelaufen markiert sind."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "phraseAnchorSpamInfo", "summary_de": "Signalbündel zu einem plötzlichen Anstieg spammiger Ankerphrasen."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "anchorPhraseCount", "summary_de": "Wie viele verschiedene Ankerphrasen auf die Seite zeigen (maximal 5000)."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "totalDomainsAbovePhraseCap", "summary_de": "Wie viele Domains die Phrasen-Obergrenze pro Domain überschritten haben."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "totalDomainsSeen", "summary_de": "Wie viele verschiedene Domains auf die Seite verlinken."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "globalAnchorDelta", "summary_de": "Wie stark sich die Menge der auf die Seite zeigenden Links verändert hat."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "totalDomainPhrasePairsSeenApprox", "summary_de": "Ungefähre Anzahl der Domain-Phrasen-Paare vor dem Kappen."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "anchorsWithDedupedImprovanchors", "summary_de": "Wie vielen Ankern innerhalb der verlinkenden Organisation doppelte Phrasen entfernt wurden."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "redundantAnchorForPhraseCapCount", "summary_de": "Wie viele Anker wegen Überschreitung der Phrasen-Obergrenze pro Domain verworfen wurden."}
+{"module": "IndexingDocjoinerAnchorStatistics", "name": "totalDomainPhrasePairsAboveLimit", "summary_de": "Wie viele Domain-Phrasen-Paare die Obergrenze überschritten haben."}
+{"module": "AnchorsAnchor", "name": "creationDate", "summary_de": "Wann der Link erstmals gesehen wurde; im Frische-Index auch als Retweet-Zeit genutzt."}
+{"module": "AnchorsAnchor", "name": "origText", "summary_de": "Der Linktext exakt wie geschrieben, inklusive Groß-/Kleinschreibung und Satzzeichen."}
+{"module": "AnchorsAnchor", "name": "context2", "summary_de": "Ein Hash der Wörter, die den Link auf der Seite umgeben."}
+{"module": "AnchorsAnchor", "name": "sourceType", "summary_de": "Qualitätsstufe der verlinkenden Seite: hoch, mittel oder niedrig."}
+{"module": "AnchorsAnchor", "name": "pagerankWeight", "summary_de": "Das Gewicht dieses Links bei der PageRank-Berechnung."}
+{"module": "AnchorsAnchor", "name": "isLocal", "summary_de": "Grob, ob verlinkende Seite und Zielseite dieselbe Domain teilen."}
+{"module": "AnchorsAnchor", "name": "fullLeftContext", "summary_de": "Der vollständige Text, der auf der Seite vor dem Link steht."}
+{"module": "AnchorsAnchor", "name": "expired", "summary_de": "Markiert, dass die verlinkende Domain eine abgelaufene Domain ist."}
+{"module": "AnchorsAnchor", "name": "catfishTags", "summary_de": "Linkattribute, die zur Laufzeit erzeugt statt gespeichert werden."}
+{"module": "AnchorsAnchor", "name": "linkTags", "summary_de": "Attribute, die den Linktyp und die Herkunftsseite beschreiben."}
+{"module": "AnchorsAnchor", "name": "locality", "summary_de": "Ein Maß, wie lokal ein Link ist; dient der Bewertung der Linkqualität."}
+{"module": "AnchorsAnchor", "name": "parallelLinks", "summary_de": "Wie viele andere Links auf derselben Seite auf dieselbe Zieldomain zeigen."}
+{"module": "AnchorsAnchor", "name": "text", "summary_de": "Die Wörter, aus denen der Linktext besteht."}
+{"module": "AnchorsAnchor", "name": "firstseenDate", "summary_de": "Tag, an dem der Link zuerst gesehen wurde, gezählt ab einem festen Datum im Jahr 1994."}
+{"module": "AnchorsAnchor", "name": "setiPagerankWeight", "summary_de": "Ein zweites, temporäres Linkgewicht für eine PageRank-Variante."}
+{"module": "AnchorsAnchor", "name": "linkAdditionalInfo", "summary_de": "Zusatzdaten zum Link, z. B. weiterer Ankertext oder Scores."}
+{"module": "AnchorsAnchor", "name": "firstseenNearCreation", "summary_de": "Ob das Erstsichtungsdatum nahe am tatsächlichen Hinzufügezeitpunkt des Links liegt."}
+{"module": "AnchorsAnchor", "name": "lastUpdateTimestamp", "summary_de": "Wann dieser Linkdatensatz bei der Indexierung zuletzt aktualisiert wurde."}
+{"module": "AnchorsAnchor", "name": "weight", "summary_de": "Das Gewicht des Links auf einer Skala von 0 bis 127."}
+{"module": "AnchorsAnchor", "name": "encodedNewsAnchorData", "summary_de": "Gepackte Daten, die Links von nachrichtenstarken, hochwertigen Websites markieren."}
+{"module": "AnchorsAnchorSource", "name": "crawlTimestamp", "summary_de": "Wann die verlinkende Seite gecrawlt wurde."}
+{"module": "AnchorsAnchorSource", "name": "homePageInfo", "summary_de": "Ob die verlinkende Seite eine Startseite ist und wie vertrauenswürdig diese ist."}
+{"module": "AnchorsAnchorSource", "name": "indyrank", "summary_de": "Ein gespeicherter Rangwert der verlinkenden Seite."}
+{"module": "AnchorsAnchorSource", "name": "language", "summary_de": "Sprache der verlinkenden Seite."}
+{"module": "AnchorsAnchorSource", "name": "localCountryCodes", "summary_de": "Länder, für die die verlinkende Seite als besonders relevant gilt."}
+{"module": "AnchorsAnchorSource", "name": "nsr", "summary_de": "Website-Qualitätsscore der verlinkenden Seite, skaliert auf 0 bis 1000."}
+{"module": "AnchorsAnchorSource", "name": "outsites", "summary_de": "Ungefähr, auf wie viele verschiedene Websites die verlinkende Seite verweist."}
+{"module": "AnchorsAnchorSource", "name": "pagerank", "summary_de": "PageRank der verlinkenden Seite auf einer 16-Bit-Skala."}
+{"module": "AnchorsAnchorSource", "name": "pagerankNs", "summary_de": "Ein Varianten-PageRank-Wert der verlinkenden Seite."}
+{"module": "AnchorsAnchorSource", "name": "spamrank", "summary_de": "Spam-Rang der verlinkenden Seite auf einer 16-Bit-Skala."}
+{"module": "AnchorsAnchorSource", "name": "spamscore2", "summary_de": "Ein Spam-Score der verlinkenden Seite auf einer Skala von 0 bis 127."}
+{"module": "Anchors", "name": "homepageAnchorsDropped", "summary_de": "Wie viele Links von anderen Startseiten derselben Website bei der Ankerverarbeitung verworfen wurden."}
+{"module": "Anchors", "name": "indexTier", "summary_de": "Aus welcher Indexstufe die Anker stammen."}
+{"module": "Anchors", "name": "localAnchorsDropped", "summary_de": "Wie viele Links von Nicht-Startseiten derselben Website bei der Ankerverarbeitung verworfen wurden."}
+{"module": "Anchors", "name": "nonlocalAnchorsDropped", "summary_de": "Wie viele Links von anderen Websites bei der Ankerverarbeitung verworfen wurden."}
+{"module": "RepositoryWebrefEntityJoin", "name": "contextNameInfo", "summary_de": "Bewertete, mit der Entität verwandte Namen, die nicht zur Erkennung von Erwähnungen dienen."}
+{"module": "RepositoryWebrefEntityJoin", "name": "extraData", "summary_de": "Zusätzliche Metadaten zur Entität, gesammelt aus ihren Quellen."}
+{"module": "RepositoryWebrefEntityJoin", "name": "linkInfo", "summary_de": "Alle bewerteten Beziehungen dieser Entität zu anderen Entitäten."}
+{"module": "RepositoryWebrefEntityJoin", "name": "nameInfo", "summary_de": "Alle bewerteten Namen, die für diese Entität bekannt sind."}
+{"module": "RepositoryWebrefEntityJoin", "name": "refconNameInfo", "summary_de": "Namen und Namensdetails für das System zur Entitätsabgleichung (Reconciliation)."}
+{"module": "RepositoryWebrefDocumentMetadata", "name": "crawlTime", "summary_de": "Wann die Seite gecrawlt wurde."}
+{"module": "RepositoryWebrefDocumentMetadata", "name": "forwardingUrls", "summary_de": "Andere Adressen, die auf diese Seite weiterleiten."}
+{"module": "RepositoryWebrefDocumentMetadata", "name": "isDisambiguationPage", "summary_de": "Ob die Seite eine bekannte Begriffsklärungsseite ist."}
+{"module": "RepositoryWebrefDocumentMetadata", "name": "numIncomingAnchors", "summary_de": "Die gewichtete Anzahl der Links, die von anderen Seiten auf diese Seite zeigen."}
+{"module": "RepositoryWebrefDocumentMetadata", "name": "salientTerms", "summary_de": "Die wichtigen Begriffe der Seite (übernommen, wenn ein Flag gesetzt ist)."}
+{"module": "RepositoryWebrefDocumentMetadata", "name": "title", "summary_de": "Der Seitentitel (übernommen, wenn ein Flag gesetzt ist)."}
+{"module": "RepositoryWebrefDocumentMetadata", "name": "totalClicks", "summary_de": "Die Gesamtzahl der Klicks auf diese Seite aus den NavBoost-Daten."}
+{"module": "RepositoryWebrefGlobalLinkInfo", "name": "isBoostedPrimaryWeightLink", "summary_de": "Markiert einen Entitätslink, der in manchen Fällen im primären Scoring zusätzlich gewichtet wird."}
+{"module": "RepositoryWebrefWebrefEntities", "name": "category", "summary_de": "Der Seite oder Anfrage zugeordnete Themenkategorien."}
+{"module": "RepositoryWebrefWebrefEntities", "name": "dateRange", "summary_de": "Zeiträume, die als besonders relevant für die Seite gelten, z. B. das Erscheinungsdatum eines Films."}
+{"module": "RepositoryWebrefWebrefEntities", "name": "entity", "summary_de": "Die auf der Seite gefundenen Entitäten mit Konfidenz- und Topikalitätsscores."}
+{"module": "SpamBrainScore", "name": "sbScore", "summary_de": "SpamBrains Spam-Score für dieses Dokument unter einer bestimmten Modellversion."}
+{"module": "SpamBrainData", "name": "site", "summary_de": "Die Website-Gruppierung, für die ein Ergebnis eines Spam-Klassifikators gilt."}
+{"module": "SpamBrainData", "name": "versionedData", "summary_de": "Die Scores des Spam-Klassifikators für ein Ergebnis, einer pro Modellversion."}
+{"module": "LocalWWWInfo", "name": "geotopicality", "summary_de": "Annotationen zu den geografischen Orten, um die es auf einer Seite geht (keine einzelnen Unternehmen)."}
+{"module": "LocalWWWInfo", "name": "siteSiblings", "summary_de": "Pro Dokument die Anzahl verwandter Seiten derselben Website, unabhängig von einer Adresse."}
+{"module": "LocalWWWInfoCluster", "name": "annotationConfidence", "summary_de": "Konfidenz, dass eine auf der Seite erwähnte Firma wirklich dieses Unternehmen ist."}
+{"module": "LocalWWWInfoCluster", "name": "confidence", "summary_de": "Wahrscheinlichkeit, dass diese Seite die eigene Hauptseite des Unternehmens ist."}
+{"module": "KaltixPerDocData", "name": "KaltixRank", "summary_de": "Ein kompakt gespeicherter Rangwert pro Dokument für die Top-Milliarde Dokumente."}
+{"module": "SmartphonePerDocData", "name": "adsDensityInterstitialViolationStrength", "summary_de": "Wie stark die Seite gegen die Regeln für werbelastige mobile Interstitials verstößt."}
+{"module": "SmartphonePerDocData", "name": "isErrorPage", "summary_de": "Ob die Seite dem Smartphone-Crawler einen Fehler zurückgibt."}
+{"module": "SmartphonePerDocData", "name": "isN1Redirect", "summary_de": "Ob die mobile Seite Besucher vom passenden Inhalt wegleitet (Fehlweiterleitung)."}
+{"module": "SmartphonePerDocData", "name": "isSmartphoneOptimized", "summary_de": "Ob die Seite auf Smartphones korrekt dargestellt wird (Mobilfreundlichkeit)."}
+{"module": "SmartphonePerDocData", "name": "isWebErrorMobileContent", "summary_de": "Ob die URL beim Desktop-Crawler fehlschlägt, beim Smartphone-Crawler aber funktioniert."}
+{"module": "SmartphonePerDocData", "name": "maximumFlashRatio", "summary_de": "Wie viel der gerenderten Fläche das größte Flash-Objekt einnimmt."}
+{"module": "SmartphonePerDocData", "name": "violatesMobileInterstitialPolicy", "summary_de": "Ob die Seite gegen die mobilen Interstitial-Regeln verstößt und abgewertet werden sollte."}
+{"module": "BlogPerDocData", "name": "clientSpamminess", "summary_de": "Wie spammig das Tool aussieht, mit dem ein Kurzbeitrag erstellt wurde."}
+{"module": "BlogPerDocData", "name": "numMentions", "summary_de": "Wie viele @-Erwähnungen anderer Nutzer der Beitrag enthält."}
+{"module": "BlogPerDocData", "name": "spamScore", "summary_de": "Ein Spam-Score für den Blogbeitrag."}
+{"module": "BlogPerDocData", "name": "userQualityScore", "summary_de": "Qualitätsscores für den Autor und den Kurzbeitrag selbst."}
+{"module": "ShingleInfoPerDocData", "name": "numShingles", "summary_de": "Wie viele Text-Fingerabdrücke das Dokument enthält."}
+{"module": "ShingleInfoPerDocData", "name": "source", "summary_de": "Liste anderer Quellen, aus denen die Text-Fingerabdrücke des Dokuments stammen."}
+{"module": "ToolBarPerDocData", "name": "VisitorsPastDay", "summary_de": "Anzahl unterschiedlicher Google-Toolbar-Besucher dieser Seite am vergangenen Tag."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "features", "summary_de": "Klickstatistiken für bestimmte Segmente, z. B. Mobilnutzer in einer Stadt."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "impressions", "summary_de": "Wie oft das Ergebnis Nutzern angezeigt wurde."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "lastLongestClicks", "summary_de": "Wie viele Klicks der letzte und längste Klick einer zusammenhängenden Suchsitzung waren (Last Longest Click)."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "mobileSignals", "summary_de": "Klickstatistiken nur aus mobilen Suchen."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "packedIpAddress", "summary_de": "Die gepackte IP-Adresse, mit der eine Vorannahme zum Klickvertrauen nachgeschlagen wird."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "patternSccStats", "summary_de": "Statistiken über die einzelnen URLs, die zu den Klickdaten eines Musters beigetragen haben."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "unscaledIpPriorBadFraction", "summary_de": "Der rohe erwartete Anteil schädlicher Aktivität von dieser IP-Adresse, vor der Skalierung."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "unsquashed", "summary_de": "Unkomprimierte Klickstatistiken für diesen Datensatz."}
+{"module": "QualityNavboostCrapsCrapsData", "name": "voterTokenCount", "summary_de": "Wie viele verschiedene Nutzer-Tokens zu diesem Klickdatensatz beigetragen haben."}
+{"module": "QualityNavboostCrapsFeatureCrapsData", "name": "signals", "summary_de": "Die Klickstatistiken für dieses Gebietsschema-Segment (Locale)."}
+{"module": "QualityTimebasedPageType", "name": "isForumPage", "summary_de": "Ob die Seite als Forenseite klassifiziert wurde."}
+{"module": "QualityTimebasedPageType", "name": "isPageWithFreshRepeatedDates", "summary_de": "Ob die Seite eine Reihe aktueller, wiederholter Datumsangaben zeigt."}
+{"module": "QualityTimebasedPageType", "name": "isQnaPage", "summary_de": "Ob die Seite als Frage-Antwort-Seite klassifiziert wurde."}
+{"module": "QualityTimebasedDateUnreliability", "name": "unreliableDatesScore", "summary_de": "Ein Score, wie unglaubwürdig die Datumsangaben auf dieser Seite wirken."}
+{"module": "QualityTimebasedDateUnreliability", "name": "unreliableDatesScoreExposureAdjusted", "summary_de": "Der Datums-Unzuverlässigkeits-Score, gewichtet danach, wie prominent Datumsangaben auf der Seite sind."}
+{"module": "IndexingDupsLocalizedLocalizedCluster", "name": "boostSourceBlocker", "summary_de": "Ob die Seite Ziel eines Boosts sein darf, selbst aber nie geboostet werden darf."}
+{"module": "IndexingDupsLocalizedLocalizedCluster", "name": "documentLanguage", "summary_de": "Die aus dem Seitentext selbst erkannte Sprache."}
+{"module": "CompositeDocIndexingInfo", "name": "hostid", "summary_de": "Die Host-ID der Seite, vor allem um zu erkennen, ob sie auf einer geparkten Domain liegt."}
+{"module": "CompositeDocIndexingInfo", "name": "normalizedClickScore", "summary_de": "Ein Klickscore, umskaliert auf den Score einer vergleichbar rankenden normalen Seite."}
+{"module": "CompositeDocIndexingInfo", "name": "rawNavboost", "summary_de": "Der eigene Klick-Boost-Zähler der Seite, bevor Duplikate zusammengeführt werden."}
+{"module": "CompositeDocIndexingInfo", "name": "selectionTierRank", "summary_de": "Ein Score von null bis eins, der das Dokument innerhalb seiner Index-Serving-Stufe einordnet."}
+{"module": "CompositeDocIndexingInfo", "name": "urlChangerate", "summary_de": "Wie oft sich der Inhalt der Seite ändert."}
+{"module": "CompositeDocIndexingInfo", "name": "urlHistory", "summary_de": "Ein Protokoll der jüngsten Inhaltsänderungen der Seite."}
+{"module": "CompositeDocIndexingInfo", "name": "urlPatternSignals", "summary_de": "Aus dem URL-Muster abgeleitete Signale, die in den Dokument-Score einfließen."}
+{"module": "QualityTravelGoodSitesData", "name": "normalizationFactor", "summary_de": "Wie stark Gewicht aus lokalen Links skaliert wird, bevor es zu globalen Links addiert wird."}
+{"module": "QualityTravelGoodSitesData", "name": "totalScore", "summary_de": "Ein Qualitätsscore der Website, der bestimmt, welcher Website-Typ sie ist."}
+{"module": "QualitySalientTermsSalientTermSet", "name": "docData", "summary_de": "Dokumentbezogene Details zur Menge der wichtigen Begriffe."}
+{"module": "QualitySalientTermsSalientTermSet", "name": "salientTerm", "summary_de": "Die Liste der Begriffe, die das Dokument am besten beschreiben, die wichtigsten zuerst (Salient Terms)."}
+{"module": "QualitySalientTermsSignalData", "name": "confidence", "summary_de": "Wie vertrauenswürdig diese Quelle der Begriffsdaten ist, von null bis eins."}
+{"module": "QualitySalientTermsSignalData", "name": "source", "summary_de": "Aus welcher Quelle die Begriffsdaten stammen, z. B. Fließtext, Ankertexte oder Klicks."}
+{"module": "QualitySalientTermsDocData", "name": "confidence", "summary_de": "Wie viele Daten bei der Berechnung der wichtigen Begriffe des Dokuments verfügbar waren."}
+{"module": "QualitySalientTermsDocData", "name": "headVolumeRatio", "summary_de": "Der Anteil aller Begriffsvorkommen, den die Top-Begriffe des Dokuments ausmachen."}
+{"module": "QualitySalientTermsDocData", "name": "language", "summary_de": "Die Hauptsprache der wichtigen Begriffe des Dokuments."}
+{"module": "QualitySalientTermsDocData", "name": "signalData", "summary_de": "Details pro Quelle (Fließtext, Anker, Klicks) hinter der Begriffsmenge."}
+{"module": "QualitySalientTermsDocData", "name": "virtualVolume", "summary_de": "Ein Maß, wie viele Begriffsdaten für das Dokument verfügbar waren."}
+{"module": "QualityAuthorityTopicEmbeddingsVersionedItem", "name": "siteEmbedding", "summary_de": "Eine kompakte numerische Zusammenfassung, worum es auf einer Website oder Seite geht (Site-Embedding)."}
+{"module": "QualityAuthorityTopicEmbeddingsVersionedItem", "name": "siteFocusScore", "summary_de": "Eine Zahl dafür, wie konsequent eine Website bei einem einzigen Thema bleibt (siteFocusScore)."}
+{"module": "QualityAuthorityTopicEmbeddingsVersionedItem", "name": "siteRadius", "summary_de": "Wie weit die einzelnen Seiten einer Website vom Hauptthema der Website abweichen (siteRadius)."}
+{"module": "WeboftrustLiveResultDocBoostData", "name": "boostLevel", "summary_de": "Wie stark der Score einer Seite angehoben wird, solange ihr Live-Ergebnis aktuell ist (0 bis 1)."}
+{"module": "WeboftrustLiveResultDocBoostData", "name": "hotTimes", "summary_de": "Das Zeitfenster, in dem das Live-Ergebnis als aktuell gilt."}
+{"module": "RepositoryAnnotationsGeoTopicality", "name": "geotopics", "summary_de": "Die Liste der Orte, um die es auf der Seite geht, der stärkste zuerst."}
+{"module": "QualityOrbitAsteroidBeltDocumentIntentScores", "name": "belowThresholdIntents", "summary_de": "Auf der Seite gefundene Themen-Intents, die unter der Auslöseschwelle lagen."}
+{"module": "QualityOrbitAsteroidBeltDocumentIntentScores", "name": "imageIntentScores", "summary_de": "Intent-Scores für jedes Bild auf der Seite, nach Bild-ID."}
+{"module": "QualityOrbitAsteroidBeltDocumentIntentScores", "name": "intents", "summary_de": "Die Liste der Intents, in die das Dokument klassifiziert wurde."}
+{"module": "QualityOrbitAsteroidBeltDocumentIntentScores", "name": "scores", "summary_de": "Die Stärke jedes erkannten Dokument-Intents auf einer Skala von 0 bis 100."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedChardXlqHoaxPrediction", "summary_de": "Eine gepackte Modellschätzung, dass die Seite ein Hoax (Falschmeldung) ist."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedChardXlqTranslatedPrediction", "summary_de": "Eine gepackte Niedrigqualitäts-Schätzung für übersetzte Inhalte auf der Seite."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedChardXlqYmylPrediction", "summary_de": "Eine gepackte Niedrigqualitäts-Schätzung für Seiten zu Geld- oder Gesundheitsthemen (YMYL)."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedDaftScore", "summary_de": "Ein gepackter Score, wie sehr das Dokument von einem Randthema (Fringe) handelt."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedDocumentFringeVulnerability", "summary_de": "Eine gepackte Schätzung, wie wahrscheinlich diese Seite Fringe-Inhalte nach oben bringt."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedEntityPriorScore", "summary_de": "Die höchste Wahrscheinlichkeit, dass eine Anfrage Fringe ist, basierend auf den Hauptentitäten der Seite."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedFringePriorScore", "summary_de": "Die Wahrscheinlichkeit, dass eine Anfrage Fringe ist, wenn diese Seite in den Ergebnissen erscheint."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedFringeSitePriorScore", "summary_de": "Die Wahrscheinlichkeit, dass eine Anfrage Fringe ist, wenn die Website dieser Seite in den Ergebnissen erscheint."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedFringeSitePriorScoreForQfsTraining", "summary_de": "Eine nur fürs Training genutzte Version des Website-Fringe-Priors, die einige Eingaben weglässt."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedPredictedXlqScoreAndConfidence", "summary_de": "Eine gepackte, vorhergesagte niedrigste Qualitätsbewertung der Seite samt Konfidenz."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedProximityScore", "summary_de": "Wie ähnlich die Seite bekannten, für Fringe anfälligen Beispielseiten ist."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "encodedPseudoraterPxlqScore", "summary_de": "Der Niedrigqualitäts-Schweregrad der Seite laut einem automatisierten Bewerter."}
+{"module": "QualityFringeFringeQueryPriorPerDocData", "name": "sensitiveEntitiesMids", "summary_de": "Kennungen der Entitäten auf der Seite, die sich auf Personen oder Personengruppen beziehen."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "anchorEnd", "summary_de": "Datum des jüngsten Ankers, der auf die Seite zeigt."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "anchorFraq", "summary_de": "Anteil der Ankerhistorie, der in den abgewerteten Zeitraum fällt."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "anchorStart", "summary_de": "Datum des frühesten Ankers, der auf die Seite zeigt."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "demoted", "summary_de": "Wie viele Anker abgewertet wurden."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "demotedAll", "summary_de": "Ob alle Anker im Zeitraum abgewertet wurden oder nur die spammigen."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "demotedEnd", "summary_de": "Wann der Zeitraum der Ankerabwertung endet."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "demotedStart", "summary_de": "Wann der Zeitraum der Ankerabwertung beginnt."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "phraseCount", "summary_de": "Wie viele Spam-Phrasen in Ankertexten über verschiedene Domains hinweg vorkamen."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "phraseDays", "summary_de": "Die Anzahl der Tage, über die der Großteil dieser Phrasen auftrat."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "phraseFraq", "summary_de": "Anteil der Anker der Seite, die Spam-Phrasen waren."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "phraseRate", "summary_de": "Durchschnittliche Anzahl gefundener Spam-Anker pro Tag."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "processed", "summary_de": "Gesamtzahl der für diese Seite verarbeiteten Anker."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "spamPenalty", "summary_de": "Die insgesamt angewendete Abstrafung für Ankerspam."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "spamProbability", "summary_de": "Die vom Modell geschätzte Wahrscheinlichkeit, dass die Anker der Seite Spam sind."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "trustedDemoted", "summary_de": "Wie viele vertrauenswürdige Anker in die Spam-Wahrscheinlichkeit eingeflossen sind."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "trustedMatching", "summary_de": "Wie viele vertrauenswürdige Anker Text verwendeten, der den Spam-Begriffen entspricht."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "trustedTarget", "summary_de": "Ob diese URL auf einer vertrauenswürdigen Quelle liegt."}
+{"module": "IndexingDocjoinerAnchorSpamInfo", "name": "trustedTotal", "summary_de": "Wie viele vertrauenswürdige Quellen auf diese URL verlinken."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamCount", "summary_de": "Wie viele Spam-Phrasen in Ankertexten über verschiedene Domains hinweg vorkamen."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamDays", "summary_de": "Die Anzahl der Tage, über die der Großteil dieser Spam-Phrasen auftrat."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamDemoted", "summary_de": "Wie viele Anker abgewertet wurden."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamEnd", "summary_de": "Wann der Ausbruch spammiger Ankertexte endete."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamFraq", "summary_de": "Anteil der Anker der Seite, die Spam-Phrasen waren."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamPenalty", "summary_de": "Die insgesamt angewendete Abstrafung für Ankerspam."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamProcessed", "summary_de": "Wie viele Anker insgesamt betrachtet wurden."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamRate", "summary_de": "Durchschnittliche Anzahl gefundener Spam-Anker pro Tag."}
+{"module": "IndexingDocjoinerAnchorPhraseSpamInfo", "name": "phraseAnchorSpamStart", "summary_de": "Wann der Ausbruch spammiger Ankertexte begann."}
+{"module": "CompositeDoc", "name": "badSslCertificate", "summary_de": "Vorhanden, wenn die Seite oder ihre Weiterleitungen ein fehlerhaftes Sicherheitszertifikat haben."}
+{"module": "CompositeDoc", "name": "richcontentData", "summary_de": "Ein Protokoll, dass Teile des Seiteninhalts eingefügt, entfernt oder ersetzt wurden."}
+{"module": "CompositeDoc", "name": "scaledIndyRank", "summary_de": "Ein skalierter „Independence Rank“, in die Dokumentdaten übernommen."}
+{"module": "CompositeDoc", "name": "docVideos", "summary_de": "Daten über in die Seite eingebettete Videos."}
+{"module": "CompositeDoc", "name": "anchors", "summary_de": "Die eingehenden Links samt Ankertext für diese Seite."}
+{"module": "CompositeDoc", "name": "registrationinfo", "summary_de": "Wann diese Domain zuletzt registriert wurde und wann sie abläuft."}
+{"module": "CompositeDoc", "name": "docImages", "summary_de": "Daten zu den Bildern, die diese Seite repräsentieren sollen."}
+{"module": "CompositeDoc", "name": "porninfo", "summary_de": "Daten zu Erwachseneninhalten der Seite für die SafeSearch-Klassifizierung."}
+{"module": "CompositeDoc", "name": "urldate", "summary_de": "Ein aus der Webadresse der Seite ausgelesenes Datum."}
+{"module": "CompositeDoc", "name": "embeddedContentInfo", "summary_de": "Informationen über Inhalte und Links aus eingebetteten Ressourcen."}
+{"module": "CompositeDoc", "name": "anchorStats", "summary_de": "Zusammengefasste Statistiken zu den Links, die auf diese Seite zeigen."}
+{"module": "CompositeDoc", "name": "labelData", "summary_de": "Dem Dokument zugeordnete Labels, jeweils mit Konfidenzwert."}
+{"module": "BookCitationPerDocData", "name": "discretizedCitationScore", "summary_de": "Ein gestufter Score, wie stark die Seite ihr Hauptbuch zitiert."}
+{"module": "BookCitationPerDocData", "name": "previewable", "summary_de": "Ob die Seite eine Vorschau oder einen Auszug des Buches zeigt."}
+{"module": "BookCitationPerDocData", "name": "secondDiscretizedCitationScore", "summary_de": "Ein gestufter Score für das zweite zitierte Buch der Seite."}
+{"module": "QualityShoppingShoppingAttachment", "name": "datasetModelArticleScore", "summary_de": "Ein Klassifikator-Score, wie sehr die Seite wie ein Artikel aussieht."}
+{"module": "QualityShoppingShoppingAttachment", "name": "datasetModelForumListScore", "summary_de": "Ein Klassifikator-Score, wie sehr die Seite wie ein Forum oder eine Q&A-Seite aussieht."}
+{"module": "QualityShoppingShoppingAttachment", "name": "datasetModelMultiProductScore", "summary_de": "Ein Klassifikator-Score, wie sehr die Seite wie eine Mehrprodukt-Seite aussieht."}
+{"module": "QualityShoppingShoppingAttachment", "name": "expiredShoppingPageScore", "summary_de": "Ein Score, wie wahrscheinlich die Shopping-Seite veraltet oder abgelaufen ist."}
+{"module": "QualityShoppingShoppingAttachment", "name": "shoppingSiteScore", "summary_de": "Ein Klassifikator-Score, wie sehr die Website wie ein Online-Shop aussieht."}
+{"module": "QualityShoppingShoppingAttachment", "name": "shoppingSiteScoreShopfab", "summary_de": "Ein zweiter Shopping-Website-Klassifikator-Score für die Website."}
+{"module": "QualityShoppingShoppingAttachmentProduct", "name": "outlinkDomainRelationship", "summary_de": "Ob ein Angebotslink auf dieselbe Domain oder auf eine andere verweist."}
+{"module": "QualityShoppingShoppingAttachmentProduct", "name": "relevanceEmbedding", "summary_de": "Ein Relevanz-Embedding, übernommen aus der Produktannotation."}
+{"module": "QualityShoppingShoppingAttachmentOffer", "name": "nonDisplayableOrganicScoreMillis", "summary_de": "Eine Risikobewertung von 1 bis 1000 für ein Händlerziel in den organischen Ergebnissen."}
+{"module": "QualitySitemapTargetGroup", "name": "topUrl", "summary_de": "Die Links mit den meisten Browser-Übergangsklicks in dieser Gruppe."}
+{"module": "QualityTimebasedLastSignificantUpdateAdjustments", "name": "isUpperboundTimestampPrecise", "summary_de": "Ob der obere Grenzzeitstempel aus einem präzisen Passagen-Datum stammt."}
+{"module": "QualityTimebasedLastSignificantUpdateAdjustments", "name": "upperboundTimestampInSeconds", "summary_de": "Der späteste Zeitpunkt, den das Datum der letzten Aktualisierung der Seite haben darf."}
+{"module": "QualityProductProductSiteDataLocaleData", "name": "boostFactor", "summary_de": "Ein Multiplikator, mit dem eine Shopping-Website geboostet wird."}
+{"module": "QualityProductProductSiteDataLocaleData", "name": "gobiSite", "summary_de": "Markiert eine Website als Shopping-Domain, die bei Kategorie-Anfragen geboostet werden darf."}
+{"module": "QualitySalientTermsSalientTerm", "name": "label", "summary_de": "Der Begriff selbst, normalisiert oder in Originalschreibweise."}
+{"module": "QualitySalientTermsSalientTerm", "name": "originalTerm", "summary_de": "Die verschiedenen Schreibweisen, unter denen dieser Begriff auf der Seite gefunden wurde."}
+{"module": "QualitySalientTermsSalientTerm", "name": "salience", "summary_de": "Wie wichtig ein Begriff zur Beschreibung des Dokuments ist, von null bis eins."}
+{"module": "QualitySalientTermsSalientTerm", "name": "signalTerm", "summary_de": "Details pro Quelle für diesen Begriff, z. B. Fließtext, Anker oder Klicks."}
+{"module": "QualityCopiaFireflySiteSignal", "name": "numOfArticlesByPeriods", "summary_de": "Wie viele Artikel in Nachrichtenqualität eine Website in jedem der letzten 30-Tage-Fenster veröffentlicht hat."}
+{"module": "QualityCopiaFireflySiteSignal", "name": "numOfUrlsByPeriods", "summary_de": "Wie viele Seiten eine Website in jedem der letzten 30-Tage-Fenster veröffentlicht hat."}
+{"module": "QualityRankembedMustangMustangRankEmbedInfo", "name": "additionalFixedPointEncodings", "summary_de": "Zusätzliche kodierte Kopien des Ranking-Embeddings des Dokuments."}
+{"module": "QualityRankembedMustangMustangRankEmbedInfo", "name": "compressedDocumentEmbedding", "summary_de": "Das Ranking-Embedding des Dokuments in komprimierter Form."}
+{"module": "QualityRankembedMustangMustangRankEmbedInfo", "name": "fixedPointEncoding", "summary_de": "Das Ranking-Embedding des Dokuments, in einen kodierten String gepackt."}
+{"module": "QualityRankembedMustangMustangRankEmbedInfo", "name": "scaledFixedPoint4Encoding", "summary_de": "Eine mit vier Bit pro Wert kodierte Kopie des Ranking-Embeddings."}
+{"module": "QualityRankembedMustangMustangRankEmbedInfo", "name": "scaledFixedPoint8Encoding", "summary_de": "Eine mit acht Bit pro Wert kodierte Kopie des Ranking-Embeddings."}
+{"module": "QualityRankembedMustangMustangRankEmbedInfo", "name": "scaledShiftedFixedPoint4Encoding", "summary_de": "Eine verschobene und skalierte kompakte Kodierung des Ranking-Embeddings."}
+{"module": "RepositoryWebrefEntityNameScore", "name": "confidence", "summary_de": "Wie sicher das System ist, dass dieser Name wirklich die Entität bezeichnet."}
+{"module": "RepositoryWebrefEntityNameScore", "name": "extendedScoreRatio", "summary_de": "Namensscores für bestimmte Regionen, wenn sie vom sprachweiten Score abweichen."}
+{"module": "RepositoryWebrefEntityNameScore", "name": "nameMetadata", "summary_de": "Kombinierte Details zu einem Namen aus den verschiedenen Namensquellen."}
+{"module": "RepositoryWebrefEntityNameScore", "name": "rangeMetadata", "summary_de": "Details zum Textabschnitt, dem diese Entität zugeordnet wurde."}
+{"module": "RepositoryWebrefEntityNameScore", "name": "score", "summary_de": "Der Gesamtscore dieser Entität als Bedeutung des Namens."}
+{"module": "RepositoryWebrefEntityNameScore", "name": "scoreRatio", "summary_de": "Der Anteil dieser Entität am Gesamtscore aller Entitäten mit demselben Namen."}
+{"module": "RepositoryWebrefEntityNameScore", "name": "volumeBasedScore", "summary_de": "Der Teil eines Namensscores, der aus gezählten Quellen wie Klicks und Ankern stammt."}
+{"module": "RepositoryWebrefEntityScores", "name": "commonNgramProb", "summary_de": "Wie wahrscheinlich der Name der Entität nur ein gewöhnliches Wort oder eine Phrase ist."}
+{"module": "RepositoryWebrefEntityScores", "name": "entityIdf", "summary_de": "Wie selten eine Entität dokumentübergreifend vorkommt."}
+{"module": "RepositoryWebrefNameInfo", "name": "aggregatedScores", "summary_de": "Der kombinierte Score eines Namens über alle seine Quellen."}
+{"module": "RepositoryWebrefNameInfo", "name": "ngramData", "summary_de": "Worthäufigkeitsdaten zum Namen, z. B. wie selten er ist."}
+{"module": "RepositoryWebrefNameInfo", "name": "scores", "summary_de": "Scores, die nur vom Namen abhängen, unabhängig von einer Entität."}
+{"module": "RepositoryWebrefNameInfo", "name": "source", "summary_de": "Der Score des Namens, aufgeschlüsselt nach Quelle."}
+{"module": "RepositoryWebrefNameScores", "name": "completeWorldVolume", "summary_de": "Eine Schätzung, wie häufig ein Name insgesamt verwendet wird, inklusive unbekannter Entitäten."}
+{"module": "RepositoryWebrefNameScores", "name": "contextFringeScore", "summary_de": "Wie unbekannt ein vollständiger Kontextname einer Anfrage ist, auf einer Skala von null bis eins."}
+{"module": "RepositoryWebrefNameScores", "name": "contextWeight", "summary_de": "Wie viel Evidenz es für diesen Kontextnamen gibt."}
+{"module": "RepositoryWebrefNameScores", "name": "idfScore", "summary_de": "Wie selten dieser Name im gesamten Korpus ist."}
+{"module": "RepositoryWebrefNameScores", "name": "openWorldVolumeModifier", "summary_de": "Eine Anpassung, die zur geschätzten „Open World“-Nutzung eines Namens addiert wird."}
+{"module": "RepositoryWebrefNameScores", "name": "totalScore", "summary_de": "Die Gesamtmenge an Daten, die einen Namen aus einer Quelle stützt."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "anchorText", "summary_de": "Der sichtbare Text eines Links, der auf die Seite zeigt."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "count", "summary_de": "Wie oft genau dieser Ankertext gesehen wurde."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "countFromOffdomain", "summary_de": "Anzahl dieser Anker, die von anderen Domains kommen."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "countFromOnsite", "summary_de": "Anzahl dieser Anker, die von derselben Website kommen."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "normalizedScore", "summary_de": "Der Anker-Score nach Skalierung an der gesamten Ankermenge."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "score", "summary_de": "Kombinierter Score aller Anker mit diesem Text."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "scoreFromFragment", "summary_de": "Kombinierter Score der Anker mit diesem Text, die auf ein Seitenfragment (#) zeigen."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "scoreFromRedirect", "summary_de": "Kombinierter Score der Anker mit diesem Text, die über eine Weiterleitung ankommen."}
+{"module": "RepositoryWebrefSimplifiedAnchor", "name": "totalVolume", "summary_de": "Gesamtvolumen der Anker-Scores, das als Nenner bei der Normalisierung dient."}
+{"module": "RepositoryWebrefSimplifiedCompositeDoc", "name": "anchors", "summary_de": "Die Anker der Seite, gekürzt und nach identischem Text gruppiert."}
+{"module": "RepositoryWebrefSimplifiedCompositeDoc", "name": "documentMentionSpans", "summary_de": "Die Textabschnitte des Dokuments, die mit Entitäten markiert wurden."}
+{"module": "RepositoryWebrefWebrefEntity", "name": "annotatedRelationship", "summary_de": "Erfasste Verbindungen zwischen Entitäten, die auf derselben Seite annotiert sind."}
+{"module": "RepositoryWebrefWebrefEntity", "name": "annotations", "summary_de": "Alle Markierungen dieser Entität auf der Seite."}
+{"module": "RepositoryWebrefWebrefEntity", "name": "collections", "summary_de": "Die Typgruppen im Knowledge Graph, zu denen diese Entität gehört."}
+{"module": "RepositoryWebrefWebrefOutlinkInfo", "name": "byteLength", "summary_de": "Länge des Linktexts eines ausgehenden Links in Bytes."}
+{"module": "RepositoryWebrefWebrefOutlinkInfo", "name": "isNofollow", "summary_de": "Ob ein ausgehender Link als nofollow markiert ist."}
+{"module": "RepositoryWebrefWebrefOutlinkInfo", "name": "topicalityWeight", "summary_de": "Wie viel thematisches Gewicht jeder ausgehende Link zu dieser Adresse trägt."}
+{"module": "RepositoryWebrefWebrefOutlinkInfo", "name": "url", "summary_de": "Die Adresse, auf die ein ausgehender Link zeigt."}
+{"module": "RepositoryWebrefWebrefOutlinkInfos", "name": "outlinkInfo", "summary_de": "Details zu jeder Adresse, auf die die Seite verlinkt."}
+{"module": "RepositoryWebrefLatentEntity", "name": "broaderImportance", "summary_de": "Wie stark eine übergeordnete Entität mit dieser verbunden ist, ein Score pro Quelle."}
+{"module": "RepositoryWebrefLinkInfo", "name": "aggregatedScore", "summary_de": "Der kombinierte Score einer Entität-zu-Entität-Verbindung über alle Quellen."}
+{"module": "RepositoryWebrefLinkInfo", "name": "source", "summary_de": "Der Score der Verbindung, aufgeschlüsselt nach jeder liefernden Quelle."}
+{"module": "RepositoryWebrefCategoryInfo", "name": "allTypes", "summary_de": "Alle Entitätstypen mit Quellen und Konfidenzen, genutzt beim Entitäts-Scoring."}
+{"module": "RepositoryWebrefCategoryInfo", "name": "salientCategory", "summary_de": "Themenkategorien, die dokumentübergreifend häufig gemeinsam mit dieser Entität auftreten."}
+{"module": "RepositoryWebrefCategoryInfo", "name": "wpCategory", "summary_de": "Kategorieklassifizierung aus den Wikipedia-Kategorien."}
+{"module": "RepositoryWebrefCategoryAnnotation", "name": "hitcat", "summary_de": "Die Quellen, die behaupten, dass diese Seite zu einer Kategorie gehört."}
+{"module": "RepositoryWebrefFreebaseType", "name": "score", "summary_de": "Ein optionaler Score, wie gut ein Typ zur Entität passt."}
+{"module": "RepositoryWebrefFreebaseType", "name": "typeName", "summary_de": "Der lesbare Name eines Entitätstyps, z. B. Person oder Branche."}
+{"module": "RepositoryWebrefReferencePageScores", "name": "bookScore", "summary_de": "Ein Score, ob die Seite eine gute Referenzseite für ein Buch ist."}
+{"module": "RepositoryWebrefReferencePageScores", "name": "referencePageScore", "summary_de": "Ein Score, mit dem die Referenzseite für eine Entität ausgewählt wird."}
+{"module": "RepositoryWebrefReferencePageScores", "name": "selected", "summary_de": "Ob diese Entität als „Eigentümer“ der Referenzseite ausgewählt wurde."}
+{"module": "RepositoryWebrefReferencePageScores", "name": "singleTopicness", "summary_de": "Score von 0 bis 1, wie sehr die Seite ausschließlich von dieser einen Entität handelt."}
+{"module": "RepositoryWebrefReferencePageScores", "name": "singleTopicnessV2", "summary_de": "Neuere Version des „Single-Topicness“-Scores, die den alten ersetzen soll."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "address", "summary_de": "Stadt, Region und Land, in denen der Ort liegt, um den es auf der Seite geht."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "componentScores", "summary_de": "Die Rohscores, die zum endgültigen Orts-Score kombiniert wurden."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "confidence", "summary_de": "Wie sicher das System ist, dass es auf der Seite um diesen Ort geht."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "denseCity", "summary_de": "Ob der Ort eine dicht besiedelte Stadt ist."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "latE7", "summary_de": "Breiten- und Längengrad des Ortes."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "locationName", "summary_de": "Der standardisierte Name des Ortes."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "normalizedScore", "summary_de": "Wie wahrscheinlich es auf der Seite um diesen Ort geht, von null bis eins."}
+{"module": "RepositoryAnnotationsGeoTopic", "name": "sumContainedPoiNormalizedScores", "summary_de": "Die aufsummierten Scores der Points of Interest innerhalb dieses Gebiets."}
+{"module": "SafesearchInternalImageSignals", "name": "starburstPornScore", "summary_de": "Ein Erwachseneninhalts-Score für Bilder, der in die finalen SafeSearch-Scores einfließt."}
+{"module": "WeboftrustLiveResultsDocAttachments", "name": "docBoost", "summary_de": "Das Paket mit Live-Ergebnis-Boost-Informationen eines Dokuments."}
+{"module": "IndexingSignalAggregatorSccSignal", "name": "numImageUrls", "summary_de": "Wie viele der Klicks auf die URL Bildklicks waren, als Anzahl oder Anteil."}
+{"module": "IndexingMlVerticalVerticalItem", "name": "name", "summary_de": "Der Name der vorhergesagten Vertikale (Branche/Bereich)."}
+{"module": "IndexingMlVerticalVerticalItem", "name": "probability", "summary_de": "Wie sicher das Modell ist, dass die Seite zu dieser Vertikale gehört."}
+{"module": "ImageData", "name": "corpusSelectionInfo", "summary_de": "Scoring-Infos, in welche Bildsammlungen dieses Bild aufgenommen wurde."}
+{"module": "ImageData", "name": "isUnwantedContent", "summary_de": "Ein Flag, das das Bild als unerwünscht für den Suchindex markiert."}
+{"module": "ImageData", "name": "colorScore", "summary_de": "Wie viel von jeder der zwölf Grundfarben im Bild vorkommt."}
+{"module": "ImageData", "name": "lastCrawlTime", "summary_de": "Der letzte Zeitpunkt, zu dem diese Bildadresse abgerufen wurde."}
+{"module": "ImageData", "name": "clipartDetectorScore", "summary_de": "Ein Klassifikator-Score, ob das Bild wie Clipart aussieht."}
+{"module": "ImageData", "name": "contentFirstCrawlTime", "summary_de": "Der früheste Crawl-Zeitpunkt eines nahezu identischen Duplikats dieses Bildes."}
+{"module": "ImageData", "name": "imageContentQueryBoost", "summary_de": "Anfragebezogene Score-Boosts für das Bild aus einem Bildinhaltsmodell."}
+{"module": "ImageData", "name": "nimaVq", "summary_de": "Ein Modellscore für die technische visuelle Qualität des Bildes."}
+{"module": "ImageData", "name": "imageQualityClickSignals", "summary_de": "Klickverhalten, mit dem beurteilt wird, wie nützlich und ansprechend ein Bild ist."}
+{"module": "ImageData", "name": "finalPornScore", "summary_de": "Ein kombinierter Erwachseneninhalts-Score aus Bildmerkmalen, verweisenden Seiten und Anfrageklicks."}
+{"module": "ImageData", "name": "coloredPixelsFrac", "summary_de": "Der Anteil der Pixel mit echter Farbe, um Farb- von Graustufenbildern zu unterscheiden."}
+{"module": "ImageData", "name": "whiteBackgroundScoreVersion", "summary_de": "Wie wahrscheinlich das Bild ein einzelnes Objekt auf weißem Hintergrund zeigt (Produktfoto)."}
+{"module": "ImageData", "name": "hateLogoDetection", "summary_de": "Erkennungen von Hass-Logos im Bild."}
+{"module": "ImageData", "name": "clickMagnetScore", "summary_de": "Wie wahrscheinlich das Bild Klicks von themenfremden oder schlechten Anfragen anzieht."}
+{"module": "ImageData", "name": "smearedTopWebLandingPageDocids", "summary_de": "Kennungen der bestplatzierten Webseiten, zu denen dieses Bild führt."}
+{"module": "ImageData", "name": "pornFlagData", "summary_de": "Erwachseneninhalts-Flags für den kombinierten Web- und Bildindex."}
+{"module": "ImageData", "name": "ocrGoodoc", "summary_de": "Ein gekürzter Datensatz des per Texterkennung (OCR) aus dem Bild gelesenen Texts."}
+{"module": "ImageData", "name": "orbitIntents", "summary_de": "Mit dem Bild verbundene vorhergesagte Nutzer-Intents."}
+{"module": "ImageData", "name": "packedFullFaceInfo", "summary_de": "Anzahl der Gesichter und Größe des größten Gesichts, in einen kompakten Indexwert gepackt."}
+{"module": "ImageData", "name": "ocrTextboxes", "summary_de": "Die einzelnen Textzeilen, die im Bild gefunden wurden."}
+{"module": "ImageData", "name": "h2i", "summary_de": "Wie oft Nutzer mit der Maus über dieses Bild fahren, im Vergleich zu Ansichten oder Klicks."}
+{"module": "ImageData", "name": "ocrTaser", "summary_de": "Aus dem Bild gelesener Text durch ein zweites Texterkennungssystem."}
+{"module": "ImageData", "name": "imageRegions", "summary_de": "Rahmen um im Bild erkannte Objekte, jeweils mit Label."}
+{"module": "ImageData", "name": "flowOutput", "summary_de": "Gebündelte Bildinhaltsmerkmale, um die Ähnlichkeit von Bildern zu vergleichen."}
+{"module": "ImageData", "name": "numberFaces", "summary_de": "Wie viele Gesichter im Bild gefunden wurden."}
+{"module": "ImageData", "name": "deepImageEngagingness", "summary_de": "Ein Modellscore, wie ansprechend (engaging) das Bild voraussichtlich ist."}
+{"module": "ImageData", "name": "isVisible", "summary_de": "Ob das Bild auf der Seite angezeigt oder nur von ihr verlinkt wird."}
+{"module": "ImageData", "name": "rankInNeardupCluster", "summary_de": "Welche Position das Bild unter seinen nahezu identischen Duplikaten einnimmt (eins = bestes)."}
+{"module": "ImageData", "name": "codomainStrength", "summary_de": "Konfidenz, dass das Bild auf einer Domain gehostet wird, die zur anzeigenden Seite gehört."}
+{"module": "ImageData", "name": "firstCrawlTime", "summary_de": "Der früheste Zeitpunkt, zu dem dieses Bild nachweislich existierte."}
+{"module": "ImageData", "name": "brainPornScores", "summary_de": "Aus den Bildpixeln berechnete Scores für Erwachsenen-, Gewalt-, Medizin- und Parodie-Inhalte."}
+{"module": "ImageData", "name": "largestFaceFrac", "summary_de": "Wie viel des Bildes das größte Gesicht darin einnimmt."}
+{"module": "ImageData", "name": "imageExactBoost", "summary_de": "Anfragen, zu denen das Bild vermutlich passt, jeweils mit Konfidenzscore."}
+{"module": "ImageData", "name": "firstTimeSeenOnDocSec", "summary_de": "Der Zeitpunkt, zu dem diese Bildadresse erstmals auf der anzeigenden Seite gesehen wurde."}
+{"module": "ImageData", "name": "nimaAva", "summary_de": "Ein Modellscore für die ästhetische Wirkung des Bildes."}
+{"module": "ImageRepositoryNimaOutput", "name": "score", "summary_de": "Ein Modellscore zur Bewertung der Bildqualität."}
+{"module": "ContentAttributions", "name": "freshdocsOutgoing", "summary_de": "Inhalte, die die Seite anderen Quellen zuschreibt, gefunden in der Frische-Pipeline."}
+{"module": "ContentAttributions", "name": "offlineOutgoing", "summary_de": "Inhalte, die die Seite anderen Quellen zuschreibt, gefunden durch Offline-Batch-Jobs."}
+{"module": "ContentAttributions", "name": "onlineOutgoing", "summary_de": "Inhalte, die die Seite anderen Quellen zuschreibt, gefunden bei der Online-Indexierung."}
+{"module": "BiasingPerDocData2BiasingField", "name": "value", "summary_de": "Der Biasing-Wert (Gewichtung) des Dokuments als Dezimalzahl."}
+{"module": "BiasingPerDocData2BiasingField", "name": "valueFloat", "summary_de": "Der Biasing-Wert des Dokuments als mit tausend skalierte Ganzzahl."}
+{"module": "BiasingPerDocData2BiasingField", "name": "valueInt", "summary_de": "Der Biasing-Wert des Dokuments, wenn er in eine einfache Ganzzahl passt."}
+{"module": "BiasingPerDocDataBiasingField", "name": "Value", "summary_de": "Der Biasing-Wert des Dokuments als Dezimalzahl, damit Werte einheitlich vergleichbar sind."}
+{"module": "ClassifierPornQueryStats", "name": "queryTextPornScore", "summary_de": "Ein klickgewichteter Durchschnitt, wie „erwachsen“ die Anfragen sind, über die dieses Bild geklickt wird."}
+{"module": "ClassifierPornReferrerCounts", "name": "porn", "summary_de": "Wie viele verweisende Seiten als Porno- oder Erwachseneninhalte klassifiziert sind."}
+{"module": "ClassifierPornReferrerCounts", "name": "total", "summary_de": "Die Gesamtzahl der gezählten verweisenden Seiten."}
+{"module": "ClassifierPornSiteData", "name": "avgPedoPageScore", "summary_de": "Der durchschnittliche Score der Website für Verdacht auf Kindesmissbrauchsinhalte."}
+{"module": "ClassifierPornSiteData", "name": "numberOfPages", "summary_de": "Wie viele Seiten der Website zur Berechnung dieser Erwachseneninhalts-Scores genutzt wurden."}
+{"module": "ClassifierPornSiteData", "name": "numberOfPedoPages", "summary_de": "Wie viele Seiten der Website unter der Kindesmissbrauchs-Einschränkung markiert wurden."}
+{"module": "ClassifierPornSiteData", "name": "sitePornRatio", "summary_de": "Der Anteil der Seiten der Website, die Porno- oder Softporno-Inhalte sind."}
+{"module": "ClassifierPornSiteData", "name": "violenceScore", "summary_de": "Ein Gesamtwert, wie gewalttätig die Seiten der Website bewertet werden."}
+{"module": "ClassifierPornSiteDataVersionedScore", "name": "verticals4Score", "summary_de": "Ein interner SafeSearch-Score aus einer Modellversion."}
+{"module": "CompositeDocForwardingDup", "name": "purposes", "summary_de": "Welche Daten ein Duplikat an die Hauptseite weitergibt, z. B. Anker oder Klick-Boost."}
+{"module": "CompositeDocForwardingDup", "name": "rawPagerank", "summary_de": "Der rohe PageRank der Duplikat-Adresse."}
+{"module": "CorpusSelectionInfo", "name": "corpusScore", "summary_de": "Ein korpusbezogener Score für ein Bild."}
+{"module": "CountryClickDistribution", "name": "confidence", "summary_de": "Wie verlässlich die erfasste Klickverteilung nach Ländern ist."}
+{"module": "CountryClickDistribution", "name": "total", "summary_de": "Die Gesamtzahl der gezählten Klicks für die Seite oder Domain."}
+{"module": "CountryCountryAttachment", "name": "salientCountries", "summary_de": "Die Länder, für die ein Dokument am relevantesten ist."}
+{"module": "CountryCountryAttachment", "name": "relatedCountries", "summary_de": "Länder, zu denen die Seite Bezug hat, ohne dort lokal zu sein."}
+{"module": "CountryCountryAttachment", "name": "localCountryCodes", "summary_de": "Die gespeicherten numerischen Ländercodes der Seite."}
+{"module": "CountryCountryAttachment", "name": "clickDistribution", "summary_de": "Wie sich die Klicks einer Seite auf Länder verteilen, um ihr Land zu erraten."}
+{"module": "CountryCountryAttachment", "name": "localCountries", "summary_de": "Die Länder, in denen die Seite als lokal gilt."}
+{"module": "CountryCountryAttachment", "name": "geoLocations", "summary_de": "Die konkreten Orte (z. B. Städte oder Bundesländer), die mit der Seite verknüpft sind."}
+{"module": "CountryCountryAttachment", "name": "superGlobal", "summary_de": "Ein Flag für „super globale“ Seiten, die eine geringere Länder-Abwertung erhalten."}
+{"module": "CountryCountryAttachment", "name": "metroIdList", "summary_de": "Metropolregion-Merkmale der Seite samt umgebender Provinz."}
+{"module": "CountryCountryAttachment", "name": "wmxCountry", "summary_de": "Das Land, das der Websitebetreiber in der Search Console angegeben hat."}
+{"module": "CountryCountryAttachment", "name": "metroNavboost", "summary_de": "NavBoost-Multiplikatoren pro Metropolregion, die auf die Seite angewendet werden."}
+{"module": "CountryCountryAttachment", "name": "urlPatternBasedLanguage", "summary_de": "Sprache und Land, abgeleitet aus der Struktur der URL."}
+{"module": "CountryGeoLocation", "name": "clickRadius50Percent", "summary_de": "Der Radius um den Standort der Seite, in dem die Hälfte ihrer Klicks entsteht."}
+{"module": "CountryGeoLocation", "name": "confidencePercent", "summary_de": "Wie sicher sich das System beim zugewiesenen Standort ist (0 bis 100)."}
+{"module": "CountryGeoLocation", "name": "propagatedFromASubpage", "summary_de": "Ob der Standort von einer Unterseite statt von der Seite selbst stammt."}
+{"module": "CountryGeoLocations", "name": "isNonLocationSpecific", "summary_de": "Ein Flag für Seiten mit vielen Klicks, die keinem bestimmten Ort zugeordnet sind."}
+{"module": "CountryGeoLocations", "name": "propagationDepthFromParent", "summary_de": "Wie viele URL-Ebenen die übergeordnete Seite, die den Standort lieferte, entfernt ist."}
+{"module": "CountryMetroNBFeature", "name": "enclosingProvinceGeotoken", "summary_de": "Ein Fingerabdruck des Bundesstaats um eine Metropolregion, um Metropolen zu unterscheiden."}
+{"module": "CountryMetroNBFeature", "name": "id", "summary_de": "Eine gepackte Kennung aus Land, Sprache und Metropolregion."}
+{"module": "CountryMetroNBFeature", "name": "navboost", "summary_de": "Der Multiplikator für ein Ergebnis bei einem bestimmten Gebietsschema und einer Anfrage."}
+{"module": "DocProperties", "name": "avgTermWeight", "summary_de": "Die durchschnittliche gewichtete Schriftgröße der Wörter im Seiteninhalt."}
+{"module": "DocProperties", "name": "badTitle", "summary_de": "Ein Flag, dass der Seitentitel fehlt oder bedeutungslos ist."}
+{"module": "DocProperties", "name": "languages", "summary_de": "Die Sprachen, in denen das Dokument geschrieben ist."}
+{"module": "DocProperties", "name": "numTokens", "summary_de": "Eine ungefähre Zählung von Wörtern, Tags und Satzzeichen auf der Seite."}
+{"module": "DocProperties", "name": "title", "summary_de": "Der Seitentitel aus dem Title-Tag."}
+{"module": "FatcatCompactBinaryClassification", "name": "binaryClassifier", "summary_de": "Welcher Ja/Nein-Klassifikator dieses Label für die Seite oder Website erzeugt hat."}
+{"module": "FatcatCompactBinaryClassification", "name": "discreteFraction", "summary_de": "Bei einem Website-Label: für welchen Anteil der Website das Label gilt."}
+{"module": "FatcatCompactDocClassification", "name": "weight", "summary_de": "Wie wichtig diese Seite innerhalb ihrer Website ist, basierend auf PageRank oder Impressionen."}
+{"module": "FatcatCompactRephilClustersCluster", "name": "discreteWeight", "summary_de": "Wie stark ein semantischer Themencluster auf die Seite zutrifft (Skala 0 bis 127)."}
+{"module": "FatcatCompactTaxonomicClassificationCategory", "name": "discreteWeight", "summary_de": "Wie stark diese Themenkategorie zutrifft (Skala 0 bis 127)."}
+{"module": "FatcatCompactTaxonomicClassificationCategory", "name": "id", "summary_de": "Die numerische ID der zugewiesenen Themenkategorie, z. B. Sport."}
+{"module": "GDocumentBase", "name": "NoIndexReason", "summary_de": "Flags, warum eine Seite nicht indexiert, nicht als Snippet gezeigt oder nicht gecacht werden darf."}
+{"module": "GDocumentBase", "name": "PagerankNS", "summary_de": "Der produktive PageRank der Seite, berechnet mit der „Nearest Seeds“-Methode."}
+{"module": "GDocumentBaseContent", "name": "CrawlTime", "summary_de": "Wann die Seite gecrawlt wurde, in Sekunden seit 1970."}
+{"module": "GDocumentBaseContent", "name": "Language", "summary_de": "Die Sprache, in der der Seiteninhalt geschrieben ist."}
+{"module": "HtmlrenderWebkitHeadlessProtoDocument", "name": "contentLanguage", "summary_de": "Die Sprache der gerenderten Seite."}
+{"module": "HtmlrenderWebkitHeadlessProtoDocument", "name": "title", "summary_de": "Der Titel der gerenderten Seite."}
+{"module": "HtmlrenderWebkitHeadlessProtoRenderResponse", "name": "title", "summary_de": "Der vom Renderer erzeugte Seitentitel."}
+{"module": "HtmlrenderWebkitHeadlessProtoRenderTreeNode", "name": "renderedText", "summary_de": "Der tatsächlich sichtbar gerenderte Text eines Textknotens."}
+{"module": "ImageContentQueryBoostQueryBoost", "name": "boost", "summary_de": "Ein Multiplikator, der den Score eines Bildes für eine bestimmte Anfrage erhöht oder senkt."}
+{"module": "ImageContentQueryBoostQueryBoost", "name": "query", "summary_de": "Der bereinigte Anfragetext, für den ein anfragebezogener Bild-Boost gilt."}
+{"module": "ImageContentStarburstVersionGroup", "name": "descriptorFloat", "summary_de": "Eine Zahlenliste, die beschreibt, wie ein Bild aussieht (Bild-Embedding)."}
+{"module": "ImageContentStarburstVersionGroup", "name": "descriptorFloatBeforeProjection", "summary_de": "Die Bildmerkmalswerte, bevor sie in ein Embedding komprimiert werden."}
+{"module": "ImageContentStarburstVersionGroup", "name": "descriptorShort", "summary_de": "Eine kompakte, komprimierte Version der Bildmerkmalswerte."}
+{"module": "ImageContentStarburstVersionGroup", "name": "starburstTokens", "summary_de": "Kurzcodes für die visuellen Cluster, zu denen ein Bild gehört."}
+{"module": "ImageContentStarburstVersionGroup", "name": "starburstTokensDistances", "summary_de": "Wie weit das Bild von jedem ihm zugeordneten visuellen Cluster entfernt ist."}
+{"module": "ImageDataMultibangEntitiesMultibangEntity", "name": "entityId", "summary_de": "Die Kennung eines realen Objekts (Entität), mit dem das Bild verknüpft ist."}
+{"module": "ImageDataMultibangEntitiesMultibangEntity", "name": "score", "summary_de": "Wie stark das Bild mit diesem realen Objekt verbunden ist."}
+{"module": "ImageExactBoostNavQuery", "name": "confidence", "summary_de": "Wie sicher das System ist, dass dieses Bild zur gespeicherten Anfrage passt."}
+{"module": "ImageExactBoostNavQuery", "name": "imageClickRank", "summary_de": "Welchen Rang das Bild für diese Anfrage aufgrund erhaltener Klicks hat."}
+{"module": "ImageExactBoostNavQuery", "name": "navQuery", "summary_de": "Der bereinigte Text einer Anfrage, mit der das Bild stark verknüpft ist."}
+{"module": "ImageExactBoostNavQuery", "name": "referrerDocid", "summary_de": "Kennungen der Seiten, die dieses Bild zeigen, sortiert nach ihrem Rang."}
+{"module": "ImageExactBoostNavQuery", "name": "referrerRank", "summary_de": "Welchen Rang die aktuelle Seite unter den Seiten einnimmt, die dieses Bild zeigen."}
+{"module": "ImageExifIPTCMetadata", "name": "dateCreated", "summary_de": "Das in den eingebetteten Bildmetadaten (EXIF) vermerkte Erstellungsdatum."}
+{"module": "ImageExifImageEmbeddedMetadata", "name": "modificationTime", "summary_de": "Der Zeitpunkt der letzten Änderung der Bilddatei laut Metadaten."}
+{"module": "ImageExifImageEmbeddedMetadata", "name": "captureTime", "summary_de": "Der Aufnahmezeitpunkt des Fotos laut Metadaten der Bilddatei."}
+{"module": "ImageMustangImageLinkSelectionInfo", "name": "webRelevanceScore", "summary_de": "Wie gut ein Bild zu der Seite passt, von der es ausgewählt wurde."}
+{"module": "ImageQualityNavboostImageQualityClickSignals", "name": "gveClicks", "summary_de": "Anzahl der als „gut“ bewerteten Klicks für dieses Bild."}
+{"module": "ImageQualitySensitiveMediaOrPeopleEntities", "name": "mediaEntitiesId", "summary_de": "Kennungen von Medienobjekten wie Filmen oder Bands, die mit dem Dokument verknüpft sind."}
+{"module": "ImageQualitySensitiveMediaOrPeopleEntities", "name": "peopleEntitiesId", "summary_de": "Kennungen der fünf Personen, um die es im Dokument am meisten geht."}
+{"module": "ImageRegionsImageRegion", "name": "boundingBoxScore", "summary_de": "Wie sicher das System bei diesem erkannten Rechteck (Bildbereich) ist."}
+{"module": "ImageRegionsImageRegion", "name": "knnScore", "summary_de": "Wie visuell ähnlich dieser Bereich seinen nächsten Doppelgängern ist."}
+{"module": "ImageRegionsImageRegion", "name": "labelGroup", "summary_de": "Die Labels, die diesem Bildbereich zugeordnet sind."}
+{"module": "ImageRegionsImageRegion", "name": "primaryLabel", "summary_de": "Das beste Label dafür, was in diesem Bildbereich zu sehen ist."}
+{"module": "ImageRegionsImageRegions", "name": "finalPornScore", "summary_de": "Finaler Wahrscheinlichkeitsscore für Erwachseneninhalte des Bildes."}
+{"module": "ImageRegionsImageRegions", "name": "finalViolenceScore", "summary_de": "Finaler Wahrscheinlichkeitsscore für Gewalt im Bild."}
+{"module": "ImageRegionsImageRegions", "name": "hasNavboost", "summary_de": "Ob dem Bild NavBoost-Klickdaten zugeordnet sind."}
+{"module": "ImageRegionsImageRegions", "name": "isIuInappropriate", "summary_de": "Ob das Bild als ungeeignet für Images Universal (Bildblöcke in der Websuche) markiert ist."}
+{"module": "ImageRegionsImageRegions", "name": "racyScore", "summary_de": "Score, wie sexuell anzüglich das Bild ist."}
+{"module": "ImageRepositoryAmarnaCloudSpeechSignals", "name": "results", "summary_de": "Rohe Sprache-zu-Text-Ausgabe der Cloud Speech API für das Video."}
+{"module": "ImageRepositoryAmarnaCloudSpeechSignals", "name": "transcriptAsr", "summary_de": "Das vollständige, zusammengesetzte Sprachtranskript des Videos mit Wort-Zeitmarken."}
+{"module": "ImageRepositoryAnimatedImagePerdocData", "name": "aggregatedPornScores", "summary_de": "Kombinierte Erwachseneninhalts-Scores über alle Frames eines animierten Bildes."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "cloudSpeechSignals", "summary_de": "Sprachtranskript des Videos, erzeugt von der Cloud Speech API."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "featureSetData", "summary_de": "Gespeicherte Video-Understanding-Merkmale, die den Videoinhalt beschreiben."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "videoPornScoreV4", "summary_de": "Konfidenzscore eines neueren Modells, dass das Video pornografische Inhalte enthält."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "transcriptAsr", "summary_de": "Sprachtranskript des Videos aus der Untertitel-Spracherkennung."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "s3Asr", "summary_de": "Sprachtranskript des Videos aus Googles interner Spracherkennung."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "safesearchVideoContentSignals", "summary_de": "SafeSearch-Klassifikator-Scores für den Videoinhalt über sensible Kategorien hinweg."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "videoPornScore", "summary_de": "Konfidenzscore, dass das Video pornografische Inhalte enthält."}
+{"module": "ImageRepositoryContentBasedVideoMetadata", "name": "thumbnailQualityScore", "summary_de": "Modellscore, wie visuell ansprechend ein Video-Thumbnail ist."}
+{"module": "ImageRepositoryDeepImageEngagingnessOutput", "name": "score", "summary_de": "Modellscore, der vorhersagt, wie ansprechend (engaging) ein Bild ist."}
+{"module": "ImageRepositorySpeechRecognitionAlternative", "name": "transcript", "summary_de": "Der erkannte gesprochene Text aus der Tonspur."}
+{"module": "ImageSafesearchContentBrainPornAnnotation", "name": "iuInappropriateScore", "summary_de": "Wahrscheinlichkeit, dass das Bild für allgemeine Bildergebnisse ungeeignet ist."}
+{"module": "ImageSafesearchContentBrainPornAnnotation", "name": "racyScore", "summary_de": "Score, wie sexuell anzüglich das Bild ist."}
+{"module": "ImageSafesearchContentBrainPornAnnotation", "name": "semanticSexualizationScore", "summary_de": "Abgestufter Score, wie sexualisiert der Bildinhalt ist."}
+{"module": "ImageSafesearchContentOCRAnnotation", "name": "ocrProminenceScore", "summary_de": "Wie sichtbar bzw. prominent der erkannte Text im Bild ist."}
+{"module": "ImageSafesearchContentOCRAnnotation", "name": "pornScore", "summary_de": "Wie erwachsen oder anzüglich der im Bild gefundene Text ist."}
+{"module": "ImageSafesearchContentOCRAnnotation", "name": "prominentOffensiveScore", "summary_de": "Anstößigkeit des Bildtexts, gewichtet nach seiner Prominenz."}
+{"module": "ImageSafesearchContentOCRAnnotation", "name": "prominentVulgarScore", "summary_de": "Vulgarität des Bildtexts, gewichtet nach seiner Prominenz."}
+{"module": "ImageSafesearchContentOCRAnnotation", "name": "qbstOffensiveScore", "summary_de": "Anstößigkeits-Score für markante Begriffe im Bildtext."}
+{"module": "ImageSafesearchContentOffensiveSymbolMatch", "name": "score", "summary_de": "Konfidenz, dass im Bild ein anstößiges Symbol erkannt wurde."}
+{"module": "ImageSearchImageLicenseInfo", "name": "safesearchFlags", "summary_de": "Bit-Flags, welche SafeSearch-Filter für das Bild gelten."}
+{"module": "ImageUnderstandingIndexingAnnotation", "name": "labelGroup", "summary_de": "Label-Annotationen, die beschreiben, was sich in einem erkannten Bildbereich befindet."}
+{"module": "ImageUnderstandingIndexingLabel", "name": "canonicalText", "summary_de": "Lesbarer Text des Labels, das dem Bildinhalt zugeordnet ist."}
+{"module": "ImageUnderstandingIndexingLabel", "name": "entityId", "summary_de": "Knowledge-Graph-Kennung einer im Bild gefundenen Entität (Label)."}
+{"module": "ImageUnderstandingIndexingLabel", "name": "metaData", "summary_de": "Zusätzliche Labeldetails zu Topikalität, Sichtbarkeit und Attributen."}
+{"module": "ImageUnderstandingIndexingLabel", "name": "score", "summary_de": "Konfidenzscore für ein Bild-Label."}
+{"module": "IndexingDocjoinerAnchorStatisticsPerDupStats", "name": "anchorCount", "summary_de": "Wie viele Anker für diese Duplikat-URL behalten wurden."}
+{"module": "IndexingDocjoinerAnchorStatisticsPerDupStats", "name": "offdomainAnchorCount", "summary_de": "Wie viele Anker von anderen Domains kamen."}
+{"module": "IndexingDocjoinerAnchorStatisticsPerDupStats", "name": "redundantAnchorCount", "summary_de": "Wie viele Anker als redundant eingestuft wurden."}
+{"module": "IndexingDocjoinerAnchorTrustedInfo", "name": "matchedScore", "summary_de": "Score, wie sehr der Ankertext einer vertrauenswürdigen Website den spammigen Ankern ähnelt."}
+{"module": "IndexingDocjoinerAnchorTrustedInfo", "name": "phrasesScore", "summary_de": "Wie viele Anker der Website aufgrund ihres Texts als Spam klassifiziert wurden."}
+{"module": "IndexingDocjoinerAnchorTrustedInfo", "name": "text", "summary_de": "Der in Tokens zerlegte Ankertext dieser Website."}
+{"module": "IndexingDocjoinerAnchorTrustedInfo", "name": "trustedScore", "summary_de": "Anteil der Seiten der Website mit nachrichtenartigen Ankern; höher bei vertrauenswürdigen Websites."}
+{"module": "IndexingMobileInterstitialsProtoDesktopInterstitials", "name": "urlTree", "summary_de": "Baum der URL-Muster auf dem Host, die aufdringliche Interstitials zeigen."}
+{"module": "IndexingMobileInterstitialsProtoDesktopInterstitials", "name": "violatesDesktopInterstitialPolicy", "summary_de": "Ob die Seite gegen die Desktop-Interstitial-Regeln verstößt."}
+{"module": "IndexingMobileInterstitialsProtoDesktopInterstitialsDetails", "name": "isSmearedSignal", "summary_de": "Flag: Das Interstitial-Signal wurde aus anderen URLs geschätzt statt auf dieser Seite gemessen."}
+{"module": "IndexingMobileInterstitialsProtoInterstitialBasicInfo", "name": "absoluteBox", "summary_de": "Position und Größe eines erkannten Interstitial-Overlays auf der Seite, in Pixeln."}
+{"module": "IndexingMobileVoltCoreWebVitals", "name": "cls", "summary_de": "Der Cumulative-Layout-Shift-Wert (CLS) der Seite – ein Maß für die visuelle Stabilität beim Laden."}
+{"module": "IndexingMobileVoltCoreWebVitals", "name": "fid", "summary_de": "Der First Input Delay (FID) der Seite – wie lange sie braucht, um auf die erste Nutzerinteraktion zu reagieren."}
+{"module": "IndexingMobileVoltCoreWebVitals", "name": "lcp", "summary_de": "Die Largest-Contentful-Paint-Zeit (LCP) der Seite – wie lange es dauert, bis der Hauptinhalt erscheint."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "averageChanceTime", "summary_de": "Der Durchschnittszeitpunkt der zeitlich abklingenden Anzeigechancen einer URL."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "chances", "summary_de": "Die zeitlich abklingende Zahl der Chancen, gesehen zu werden – Nenner für Klick- und Impressionsraten."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "dwells", "summary_de": "Zahl der zeitlich abklingenden Verweildauern (Dwells) aus Knowledge Panel und Web Answers."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "firstBaseCoverageTimestamp", "summary_de": "Wann diese URL erstmals im BASE-Index auftauchte."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "firstCoveragePagerankNs", "summary_de": "Der PageRank der URL zum Zeitpunkt ihrer ersten Auslieferung."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "firstCoverageTimestamp", "summary_de": "Wann diese URL erstmals überhaupt Abdeckungsdaten erhielt."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "intervalData", "summary_de": "Erfasst die durchschnittliche Zeit zwischen Klicks, guten Klicks und gewichteten Impressionen der URL."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "lastDwellDateInDays", "summary_de": "Der letzte Tag, an dem die Seite einen Knowledge-Panel- oder Web-Answer-Dwell erhielt."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "lastGoodClickDateInDays", "summary_de": "Der letzte Tag, an dem die Seite einen guten Klick erhielt."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "lastImpressionDateInDays", "summary_de": "Der letzte Tag, an dem die Seite in den Ergebnissen angezeigt wurde."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "lastLuDwellDateInDays", "summary_de": "Der letzte Tag, an dem die Seite einen Local-Universal-Dwell erhielt."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "lastPseudoImpressionsDateInDays", "summary_de": "Der letzte Tag, an dem die Seite als Ergebnis gefunden, aber wegen ihres Alters zurückgehalten wurde."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "luDwells", "summary_de": "Zahl der zeitlich abklingenden Dwells aus Local-Universal-Ergebnissen (lokale Ergebnisse)."}
+{"module": "IndexingSignalAggregatorAgeWeightedCoverageData", "name": "totalChances", "summary_de": "Die rohe, nicht abklingende Zahl der Anzeigechancen dieser URL."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "deviation", "summary_de": "Wie stark die einzelnen URL-Scores innerhalb der Gruppe streuen."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "maxScoreUrl", "summary_de": "Die einzelne URL mit dem höchsten Score in dieser Gruppe."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "meanScore", "summary_de": "Der durchschnittliche Score aller URLs in dieser Gruppe."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "minScoreUrl", "summary_de": "Die einzelne URL mit dem niedrigsten Score in dieser Gruppe."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "numUrlsMatched", "summary_de": "Wie viele URLs zu diesem Muster oder dieser Klasse passen."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "numUrlsWithSignal", "summary_de": "Wie viele der passenden URLs tatsächlich einen Signalwert hatten."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "patternsUsedInMediation", "summary_de": "Die Liste der URL-Muster, die tatsächlich zum kombinierten Signal beigetragen haben."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "percentile", "summary_de": "Score-Grenzwerte, die die passenden URLs in gleich große Gruppen (Perzentile) teilen."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "scores", "summary_de": "Die gesammelte Score-Liste zur Berechnung der Perzentile."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "singleUrlScore", "summary_de": "Enthält den Score, wenn dieser Datensatz nur eine URL abdeckt."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "totalScore", "summary_de": "Eine laufende Score-Summe zur Berechnung des Mittelwerts."}
+{"module": "IndexingSignalAggregatorAggregatedScore", "name": "totalWeight", "summary_de": "Eine laufende Gewichtssumme für gewichtete Mittelwerte."}
+{"module": "IndexingSignalAggregatorSccData", "name": "pattern", "summary_de": "Der am besten passende URL-Muster-Datensatz für diese Daten."}
+{"module": "IndexingSignalAggregatorUrlScore", "name": "firstServedTimestamp", "summary_de": "Der allererste Zeitpunkt, zu dem dieses Dokument irgendwo ausgeliefert wurde."}
+{"module": "IndexingSignalAggregatorUrlScore", "name": "isImportant", "summary_de": "Markiert eine URL mit einem bemerkenswerten Signal, z. B. guten Klicks."}
+{"module": "IndexingSignalAggregatorUrlScore", "name": "score", "summary_de": "Der Signal-Score dieser URL; fehlt, wenn die URL kein Signal hat."}
+{"module": "IndexingSignalAggregatorUrlScore", "name": "weight", "summary_de": "Wie stark diese URL zählt, wenn Scores kombiniert werden."}
+{"module": "IndexingSpeechSpeechPropertiesProto", "name": "audioDuration", "summary_de": "Wie viele Sekunden Audio in diesem Medienfragment verarbeitet wurden."}
+{"module": "IndexingSpeechSpeechPropertiesProto", "name": "audioOnly", "summary_de": "Ob die Mediendatei nur Audio und keine Videospur hat."}
+{"module": "IndexingSpeechSpeechPropertiesProto", "name": "estimatedAudioDuration", "summary_de": "Die geschätzte Gesamtlänge des Audios der gesamten Mediendatei in Sekunden."}
+{"module": "IndexingSpeechSpeechPropertiesProto", "name": "languageCode", "summary_de": "Die im Audio gesprochene Sprache, die von der Seitensprache abweichen kann."}
+{"module": "IndexingSpeechSpeechPropertiesProto", "name": "numWords", "summary_de": "Wie viele Wörter die Spracherkennung im Audio erkannt hat."}
+{"module": "IndexingSpeechSpeechPropertiesProto", "name": "recognizerAccuracy", "summary_de": "Die geschätzte Genauigkeit der Spracherkennung, von null bis eins."}
+{"module": "IndexingSpeechSpeechPropertiesProto", "name": "speechDuration", "summary_de": "Wie viele Sekunden tatsächlicher Sprache im verarbeiteten Audio enthalten waren."}
+{"module": "IndexingVideosAsrTranscriptRepairAnnotation", "name": "numGibberishSegments", "summary_de": "Wie viele Transkriptabschnitte als sinnloser Text (Gibberish) eingestuft wurden."}
+{"module": "IndexingVideosAsrTranscriptRepairAnnotation", "name": "numSegmentsClassified", "summary_de": "Wie viele Transkriptabschnitte zur Gibberish-Klassifizierung geschickt wurden."}
+{"module": "MediaIndexRegion", "name": "entityFields", "summary_de": "Die in einem markierten Bildbereich erkannten Entitäten."}
+{"module": "MediaIndexRegion", "name": "labels", "summary_de": "Labels mit Konfidenzscores für einen Bildbereich, gespeichert für schnelles Sortieren."}
+{"module": "MediaIndexVideoCentroidDomainScore", "name": "numDocs", "summary_de": "Wie viele Seiten dieser Domain zur Berechnung des Video-Domain-Scores genutzt wurden."}
+{"module": "MediaIndexVideoCentroidDomainScore", "name": "score", "summary_de": "Ein Score, der niedriger ist, je vielfältiger die Seiten einer Domain sind, auf denen ein Video erscheint."}
+{"module": "NSRVersionedItem", "name": "value", "summary_de": "Ein Website-Qualitätswert (NSR) für eine bestimmte Version dieses Maßes."}
+{"module": "NlpSaftDocument", "name": "contentage", "summary_de": "Wie alt der Inhalt der Seite ist, als Zeitstempel gespeichert."}
+{"module": "NlpSaftDocument", "name": "bylineDate", "summary_de": "Das Byline-Datum der Seite als Zeitstempel; wird in Such-Snippets angezeigt."}
+{"module": "NlpSaftDocument", "name": "date", "summary_de": "Das Ankerdatum des Dokuments als vollständiger Jahr-Monat-Tag-Zeitstempel."}
+{"module": "NlpSaftDocument", "name": "entity", "summary_de": "Die Liste der im Dokumenttext erkannten Entitäten."}
+{"module": "NlpSaftDocument", "name": "lastSignificantUpdate", "summary_de": "Der Zeitpunkt der letzten bedeutsamen Änderung des Seiteninhalts."}
+{"module": "NlpSaftDocument", "name": "hyperlink", "summary_de": "Die Liste der im Dokument gefundenen Links in ihrer Reihenfolge."}
+{"module": "NlpSaftDocument", "name": "annotatedPhrase", "summary_de": "Im Text markierte Phrasen, die keine eindeutigen Verweise auf eine bekannte Entität sind."}
+{"module": "NlpSaftDocument", "name": "contentFirstseen", "summary_de": "Der früheste Zeitpunkt, zu dem Google die Seite mit Inhalt gecrawlt oder indexiert hat."}
+{"module": "NlpSaftDocument", "name": "language", "summary_de": "Die Sprache, in der das Dokument geschrieben ist."}
+{"module": "NlpSaftDocument", "name": "focusEntity", "summary_de": "Die eine Entität, um die es auf der Seite hauptsächlich geht, z. B. ein Wikipedia-Thema."}
+{"module": "NlpSaftDocument", "name": "author", "summary_de": "Der Name oder die Namen der Personen, die als Autoren des Dokuments genannt werden."}
+{"module": "NlpSaftDocument", "name": "syntacticDate", "summary_de": "Ein Datum aus URL oder Titel der Seite, als Zeitstempel gespeichert."}
+{"module": "NlpSaftDocument", "name": "title", "summary_de": "Der Titel des Dokuments."}
+{"module": "NlpSaftDocumentTopic", "name": "name", "summary_de": "Der Name eines dem Dokument zugewiesenen Themas."}
+{"module": "NlpSaftDocumentTopic", "name": "score", "summary_de": "Wie stark das Dokument zu einem zugewiesenen Thema passt."}
+{"module": "NlpSaftEntity", "name": "mention", "summary_de": "Die Stellen im Dokument, an denen diese Entität erwähnt wird."}
+{"module": "NlpSaftEntity", "name": "name", "summary_de": "Der Hauptname dieser Entität."}
+{"module": "NlpSaftEntity", "name": "profile", "summary_de": "Das dieser Entität zugeordnete Wissensprofil."}
+{"module": "NlpSaftEntity", "name": "salience", "summary_de": "Wie zentral diese Entität für den Inhalt des Dokuments ist."}
+{"module": "NlpSaftEntity", "name": "type", "summary_de": "Die Kategorien dieser Entität, z. B. Person, Ort oder TV-Persönlichkeit."}
+{"module": "NlpSaftEntityType", "name": "name", "summary_de": "Der Name der Kategorie, zu der eine Entität gehört, z. B. Person oder Ort."}
+{"module": "NlpSaftEntityType", "name": "score", "summary_de": "Wie sicher das System ist, dass eine Entität zu dieser Kategorie gehört."}
+{"module": "NlpSaftHyperlink", "name": "anchorText", "summary_de": "Der reine sichtbare Text eines Links, ohne Markup."}
+{"module": "NlpSaftHyperlink", "name": "url", "summary_de": "Die vollständige Adresse, auf die ein Link zeigt."}
+{"module": "NlpSaftMention", "name": "resolution", "summary_de": "Worauf sich eine Erwähnung selbst bezieht – kann von der zugehörigen Entität abweichen."}
+{"module": "NlxDataSchemaMention", "name": "entity", "summary_de": "Verbindung von einem im Text erwähnten Namen zur gemeinten Entität."}
+{"module": "OceanDocTag", "name": "pagerank", "summary_de": "Für eine Buchseite gespeicherter PageRank-Wert."}
+{"module": "OrionDocEntitiesProto", "name": "encodedEntity", "summary_de": "Kodierte Liste der in einem Dokument gefundenen Entitäten."}
+{"module": "PairwiseQVersionedItem", "name": "confidenceValue", "summary_de": "Wie verlässlich der gespeicherte PairwiseQ-Score für diese Version ist."}
+{"module": "PairwiseQVersionedItem", "name": "value", "summary_de": "Ein gespeicherter PairwiseQ-Score (paarweiser Qualitätsvergleich) für eine Version."}
+{"module": "PornFlagData", "name": "finalOffensiveScore", "summary_de": "Der finale Anstößigkeits-Score eines Bildes aus seinen Text- und OCR-Scores."}
+{"module": "PornFlagData", "name": "finalViolenceScore", "summary_de": "Der finale Gewalt-Score eines Bildes, kombiniert aus mehreren Bildsignalen."}
+{"module": "PornFlagData", "name": "numberFaces", "summary_de": "Wie viele Gesichter im Bild erkannt wurden."}
+{"module": "PornFlagData", "name": "ocrAnnotation", "summary_de": "Per OCR aus dem Bild gelesener Text samt Anmerkungen."}
+{"module": "PornFlagData", "name": "offensiveSymbolDetection", "summary_de": "Ob Hasssymbole wie ein Hakenkreuz im Bild erkannt wurden."}
+{"module": "PornFlagData", "name": "pornWithHighConfidence", "summary_de": "Flag für eindeutig pornografische Bilder, die bei Nicht-Porno-Anfragen abgewertet werden können."}
+{"module": "PornFlagData", "name": "qbstOffensiveScore", "summary_de": "Ein Anstößigkeits-Score für ein Bild, abgeleitet aus den Suchanfragen, über die es erreicht wurde."}
+{"module": "PornFlagData", "name": "qbstSpoofScore", "summary_de": "Ein Score, wie irreführend ein Bild ist, abgeleitet aus Suchprotokollen."}
+{"module": "PornFlagData", "name": "queryStats", "summary_de": "Statistiken über die Anfragen, die zu diesem Bild führten, aus Klickprotokollen."}
+{"module": "PornFlagData", "name": "queryTextViolenceScore", "summary_de": "Ein Gewalt-Score für ein Bild, aufsummiert aus den Anfragen, die zu ihm führten."}
+{"module": "PornFlagData", "name": "referrerCounts", "summary_de": "Anzahl der auf dieses Bild verlinkenden Seiten und wie „erwachsen“ diese sind."}
+{"module": "PornFlagData", "name": "semanticSexualizationScore", "summary_de": "Ein Modellscore, wie sexualisiert das Bild wirkt."}
+{"module": "PseudoVideoDataTranscript", "name": "Text", "summary_de": "Das vollständige Transkript des gesprochenen Worts im Video oder Audio."}
+{"module": "QualityGeoBrainlocBrainlocAttachment", "name": "topCitiesVocabIds", "summary_de": "Die wichtigsten mit dem Dokument verknüpften Orte samt Scores, kompakt gespeichert."}
+{"module": "QualityNsrKetoKetoVersionedData", "name": "siteFrac", "summary_de": "Welcher Anteil der Seiten der Website in die Berechnung des Website-Scores eingeflossen ist."}
+{"module": "QualityNsrKetoKetoVersionedData", "name": "siteScore", "summary_de": "Ein websiteweit zusammengefasster Keto-Qualitätsscore."}
+{"module": "QualityNsrNSRVersionedData", "name": "value", "summary_de": "Der Website-Qualitätswert (NSR) für eine Version."}
+{"module": "QualityNsrPQDataSubchunkData", "name": "confidence", "summary_de": "Wie verlässlich die Werte dieser Themengruppe sind."}
+{"module": "QualityNsrPQDataSubchunkData", "name": "deltaNsr", "summary_de": "Wie stark diese Themengruppe den Website-Qualitätsscore verschiebt."}
+{"module": "QualityNsrPQDataSubchunkData", "name": "pageWeight", "summary_de": "Wie stark diese Seite zur Themengruppe gehört."}
+{"module": "QualityNsrPQDataSubchunkData", "name": "type", "summary_de": "Welche Themengruppe dieser Abschnitt (Chunk) repräsentiert, z. B. Gesundheit."}
+{"module": "QualityNsrVersionedFloatSignal", "name": "value", "summary_de": "Der Dezimalwert eines Signals für eine Version."}
+{"module": "QualityNsrVersionedIntSignal", "name": "value", "summary_de": "Der ganzzahlige Wert eines Signals für eine Version."}
+{"module": "QualityOrbitAsteroidBeltImageIntentScores", "name": "intents", "summary_de": "Die Liste der einem Bild zugeordneten Intents."}
+{"module": "QualityOrbitAsteroidBeltImageIntentScores", "name": "scores", "summary_de": "Die Stärke jedes Bild-Intents auf einer Skala von 0 bis 100."}
+{"module": "QualityOrbitOrbitImageIntent", "name": "imageIntent", "summary_de": "Um welchen Intent es in diesem Bildklassifizierungs-Eintrag geht."}
+{"module": "QualityOrbitOrbitImageIntent", "name": "score", "summary_de": "Wie stark das Bild zu diesem Intent passt."}
+{"module": "QualityOrbitOrbitImageIntent", "name": "trigger", "summary_de": "Ob der Bild-Intent seine Standardschwelle überschritten hat."}
+{"module": "QualityOrbitOrbitImageIntents", "name": "intents", "summary_de": "Die Bild-Intents, die hoch genug bewertet wurden, um behalten zu werden."}
+{"module": "QualityRankembedMustangMustangRankEmbedInfoCompressedEmbedding", "name": "packedValue", "summary_de": "Die Embedding-Werte, platzsparend zusammengepackt."}
+{"module": "QualitySalientCountriesSalientCountry", "name": "country", "summary_de": "Der zweibuchstabige Code eines Landes, von dem dieses Dokument handelt."}
+{"module": "QualitySalientCountriesSalientCountry", "name": "salience", "summary_de": "Wie stark das Dokument mit diesem Land zusammenhängt, von null bis eins."}
+{"module": "QualitySalientCountriesSalientCountrySet", "name": "packedCountry", "summary_de": "Ländercodes und ihre Salienzwerte, für die Speicherung zusammengepackt."}
+{"module": "QualitySalientTermsSignalTermData", "name": "source", "summary_de": "Aus welcher Quelle diese Begriffsdaten stammen."}
+{"module": "QualitySherlockKnexAnnotationItem", "name": "calibratedScore", "summary_de": "Ein kalibrierter Score von null bis eins für eine Entitätsannotation des Dokuments."}
+{"module": "QualitySherlockKnexAnnotationItem", "name": "equivalentMid", "summary_de": "Die Knowledge-Graph-Kennung einer gleichbedeutenden Entität."}
+{"module": "QualitySherlockKnexAnnotationItem", "name": "score", "summary_de": "Ein Score von null bis eins für eine Entitätsannotation des Dokuments."}
+{"module": "QualityShoppingShoppingAttachmentLocale", "name": "languageId", "summary_de": "Ein numerischer Sprach- und Regionscode für schnelles Scoring."}
+{"module": "QualitySitemapBreadcrumbTargetDoc", "name": "count", "summary_de": "Wie viele Webseiten diese Adresse in ihren Breadcrumb-Pfaden aufführen."}
+{"module": "QualityTimebasedPetacatDateUnreliability", "name": "dateExposureScore", "summary_de": "Wie prominent Datumsangaben auf Seiten dieser Art erscheinen, geglättet zu einem Score."}
+{"module": "QualityTimebasedPetacatDateUnreliability", "name": "dateVsContentageDistributionSkew", "summary_de": "Ein Teilscore, der angegebene Daten mit dem tatsächlichen Seitenalter vergleicht."}
+{"module": "QualityTimebasedPetacatDateUnreliability", "name": "unreliableDatesScore", "summary_de": "Der finale Score für unglaubwürdige Datumsangaben vor dem Prominenz-Anteil."}
+{"module": "QualityVidyaVideoLanguageVideoLanguage", "name": "language", "summary_de": "Die in der Tonspur des Videos erkannte gesprochene Sprache."}
+{"module": "QualityViewsExtractionClusterInfo", "name": "clusterSetScore", "summary_de": "Wie sicher das System bei der Interpretation der Entitätsgruppe ist."}
+{"module": "QualityViewsExtractionClusterInfo", "name": "clusterSiblingMid", "summary_de": "Kennungen anderer Entitäten, die zur selben Gruppe gehören."}
+{"module": "QualityViewsExtractionClusterInfo", "name": "score", "summary_de": "Wie stark diese Entität innerhalb ihrer Gruppe ist."}
+{"module": "QualityWebanswersVideoTranscriptAnnotations", "name": "asrRepair", "summary_de": "Das Ergebnis der Qualitätsprüfung des automatischen Video-Transkripts."}
+{"module": "RegistrationInfo", "name": "createdDate", "summary_de": "Der Tag, an dem die Domain zuletzt registriert wurde, gezählt ab Januar 1995."}
+{"module": "RegistrationInfo", "name": "expiredDate", "summary_de": "Der Tag, an dem die Domain zuletzt ablief, gezählt ab Januar 1995."}
+{"module": "ReneEmbedding", "name": "clusterList", "summary_de": "Gruppierungsinformationen zu den Teilen dieses Embeddings."}
+{"module": "ReneEmbedding", "name": "compressedValue", "summary_de": "Das Embedding in komprimierter Form."}
+{"module": "ReneEmbedding", "name": "denseFeatureFloatValues", "summary_de": "Zusätzliche Merkmalswerte, die manche Modelle neben dem Embedding ausgeben."}
+{"module": "ReneEmbedding", "name": "floatValues", "summary_de": "Die Zahlen, aus denen der Embedding-Vektor besteht."}
+{"module": "ReneEmbedding", "name": "floatValuesBeforeProjection", "summary_de": "Die Embedding-Werte, bevor sie auf weniger Dimensionen reduziert wurden."}
+{"module": "ReneEmbeddingCluster", "name": "squaredDistance", "summary_de": "Wie weit dieses Embedding vom Zentrum seines Clusters entfernt ist."}
+{"module": "ReneEmbeddingClusterList", "name": "clusters", "summary_de": "Die Liste der Cluster, in die dieses Embedding fällt."}
+{"module": "RepositoryWebrefAnnotatedCategoryInfo", "name": "mid", "summary_de": "Die Knowledge-Graph-Kennung der Entität, die für diese Kategorie steht."}
+{"module": "RepositoryWebrefCategoryAnnotationHitCatSource", "name": "confidence", "summary_de": "Wie sicher das System ist, dass eine Kategorie die Seite beschreibt."}
+{"module": "RepositoryWebrefCategoryAnnotationHitCatSource", "name": "cumulativeConfidence", "summary_de": "Eine kalibrierte Konfidenz für die Kategorie, ausgerichtet auf eine Zielgenauigkeit."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "connectedness", "summary_de": "Wie stark eine Entität mit den anderen Entitäten der Seite verbunden ist; prägt teilweise die Topikalität."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "docScore", "summary_de": "Wie gut eine Seite für eine Entität abschneidet; dient dem Vergleich von Seiten zu dieser Entität."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "isAuthor", "summary_de": "Ob diese Entität der Autor der Seite ist."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "isPublisher", "summary_de": "Ob diese Entität der Herausgeber (Publisher) der Seite ist."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "isReferencePage", "summary_de": "Ob die vollständige Adresse der Seite zur Entität passt und sie so zur Referenzseite macht."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "normalizedTopicality", "summary_de": "Der Anteil am Gesamtthema der Seite, den diese Entität ausmacht."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "profileUrl", "summary_de": "Ein Link zur Autorenprofilseite auf der Website."}
+{"module": "RepositoryWebrefDetailedEntityScores", "name": "relevanceScore", "summary_de": "Ein maschinell gelernter Score, wie relevant die Entität für die Seite ist."}
+{"module": "RepositoryWebrefEntityAnnotations", "name": "confidenceScore", "summary_de": "Gesamtkonfidenz, dass die Entität wirklich in der Seite oder Anfrage erwähnt wird."}
+{"module": "RepositoryWebrefEntityAnnotations", "name": "detailedEntityScores", "summary_de": "Zusatzdetails, wie die Entität mit der Seite zusammenhängt, z. B. als Herausgeber."}
+{"module": "RepositoryWebrefEntityAnnotations", "name": "isImplicit", "summary_de": "Ob die Entität nur impliziert ist und nicht ausdrücklich im Seitentext erwähnt wird."}
+{"module": "RepositoryWebrefEntityAnnotations", "name": "segmentMentions", "summary_de": "Alle Erwähnungen der Entität, gruppiert nach Fundort wie Titel oder Ankertexte."}
+{"module": "RepositoryWebrefEntityAnnotations", "name": "topicalityRank", "summary_de": "Der Platz der Entität in der Liste, wenn Entitäten nach Topikalität sortiert werden."}
+{"module": "RepositoryWebrefEntityAnnotations", "name": "topicalityScore", "summary_de": "Wie genau die Entität zum Gesamtthema der Seite passt."}
+{"module": "RepositoryWebrefEntityLinkSource", "name": "score", "summary_de": "Wie viel häufiger zwei Entitäten gemeinsam auftreten, als der Zufall erwarten ließe."}
+{"module": "RepositoryWebrefEntityNameSource", "name": "entityScore", "summary_de": "Alle Entitäts-Namensscores aus einer Quelle."}
+{"module": "RepositoryWebrefExplainedRangeInfoExplainedRange", "name": "mention", "summary_de": "Der Erwähnungsdatensatz, der zeigt, wo der Text im Dokument steht."}
+{"module": "RepositoryWebrefExtendedEntityNameScore", "name": "scoreRatio", "summary_de": "Der Anteil der Entität am Namensscore für eine bestimmte Region oder Website."}
+{"module": "RepositoryWebrefExtraMetadata", "name": "categoryInfo", "summary_de": "Die Kategorietypen, die auf eine Entität zutreffen."}
+{"module": "RepositoryWebrefExtraMetadata", "name": "entityScores", "summary_de": "Zusätzliche numerische Scores der Entität."}
+{"module": "RepositoryWebrefExtraMetadata", "name": "equivalentEntityId", "summary_de": "Andere IDs für dasselbe reale Objekt, damit Erwähnungen in Anfrage und Seite übereinstimmen."}
+{"module": "RepositoryWebrefExtraMetadata", "name": "latentEntities", "summary_de": "Andere Entitäten, die durch diese stark impliziert werden, z. B. der Verein eines Spielers."}
+{"module": "RepositoryWebrefFatcatCategory", "name": "id", "summary_de": "Die Kennung einer Themenkategorie aus dem vertikalen Klassifizierungssystem."}
+{"module": "RepositoryWebrefFatcatCategory", "name": "score", "summary_de": "Wie stark diese Kategorie unter den zugewiesenen Kategorien gewichtet ist."}
+{"module": "RepositoryWebrefForwardingUrls", "name": "forwardingUrl", "summary_de": "Adressen, die auf diese Seite weiterleiten."}
+{"module": "RepositoryWebrefMdvcMetadataPerVertical", "name": "expandedOutputIds", "summary_de": "Zusätzliche Konzept-IDs, die immer mit annotiert werden, wenn diese Entität annotiert wird."}
+{"module": "RepositoryWebrefMdvcMetadataPerVertical", "name": "resolutionPriority", "summary_de": "Priorität, welche Entitätsauflösung annotiert wird, wenn mehrere möglich sind."}
+{"module": "RepositoryWebrefMention", "name": "confidenceScore", "summary_de": "Wie sicher der Annotator ist, dass genau dieser Textabschnitt die Entität meint."}
+{"module": "RepositoryWebrefMention", "name": "detailedMentionScores", "summary_de": "Eine Aufschlüsselung zusätzlicher Scores für eine Entitätserwähnung."}
+{"module": "RepositoryWebrefMention", "name": "priorProbability", "summary_de": "Wie wahrscheinlich die Formulierung der Erwähnung die Entität meint, bevor der Kontext berücksichtigt wird."}
+{"module": "RepositoryWebrefMention", "name": "trustedNameConfidence", "summary_de": "Wie sicher das System ist, dass diese Formulierung ein vertrauenswürdiger Name der Entität ist."}
+{"module": "RepositoryWebrefNgramContext", "name": "mention", "summary_de": "Die in diesem Kontexttext annotierten Entitäten."}
+{"module": "RepositoryWebrefNgramContext", "name": "weight", "summary_de": "Wie viel Gewicht der Kontext im Dokument hat, basierend auf wiederholtem Vorkommen."}
+{"module": "RepositoryWebrefNgramMention", "name": "score", "summary_de": "Der Durchschnittsscore der Erwähnung über alle Stellen, an denen das N-Gramm vorkam."}
+{"module": "RepositoryWebrefPreprocessingNameEntityScores", "name": "priorScore", "summary_de": "Wie viel Evidenz es gibt, dass diese Schreibweise die Entität meint."}
+{"module": "RepositoryWebrefPreprocessingNameEntityScores", "name": "volumeBasedScore", "summary_de": "Der Teil des Vorab-Scores eines Namens, der aus zählbaren Quellen stammt."}
+{"module": "RepositoryWebrefPreprocessingNameVariantSignals", "name": "scores", "summary_de": "Der gemeinsame Scoreblock für eine Namensvariante aus einer Quelle."}
+{"module": "RepositoryWebrefPreprocessingOriginalNamesOriginalName", "name": "score", "summary_de": "Wie gut diese Originalschreibweise ist, basierend auf Quellenautorität und Häufigkeit."}
+{"module": "RepositoryWebrefRefconQueryStats", "name": "aggregatedQueryCount", "summary_de": "Gesamtzahl der Anfragen, die zum Dokument führen – nutzbar zur Schätzung seiner Popularität."}
+{"module": "RepositoryWebrefRefconRefconNameInfo", "name": "namePrior", "summary_de": "Die Grundwahrscheinlichkeit, dass dieser Name für die Entität verwendet wird."}
+{"module": "RepositoryWebrefSegmentMentions", "name": "mention", "summary_de": "Liste aller Stellen in diesem Textsegment, an denen die Entität erwähnt wurde."}
+{"module": "RepositoryWebrefSemanticDateRange", "name": "confidence", "summary_de": "Wie sicher das System ist, dass ein extrahierter Zeitraum wirklich zum Dokument gehört."}
+{"module": "RepositoryWebrefSemanticDateRange", "name": "end", "summary_de": "Das Enddatum aus den Knowledge-Graph-Daten der Entität."}
+{"module": "RepositoryWebrefSemanticDateRange", "name": "start", "summary_de": "Das Startdatum aus den Knowledge-Graph-Daten der Entität."}
+{"module": "RepositoryWebrefSupportTransferRule", "name": "mentionsOnly", "summary_de": "Einstellung, mit der Seiten, die eine Entität stützen, auch für eine verwandte Entität zählen."}
+{"module": "RepositoryWebrefTripleAnnotation", "name": "confidenceScore", "summary_de": "Wie sicher das System bei einer aus der Seite extrahierten Tatsache ist."}
+{"module": "RepositoryWebrefUniversalNgramData", "name": "idf", "summary_de": "Wie selten ein Wort oder eine Phrase dokumentübergreifend ist."}
+{"module": "RepositoryWebrefUniversalNgramData", "name": "pluralProb", "summary_de": "Wahrscheinlichkeit, dass eine Phrase die Pluralform eines Worts ist."}
+{"module": "RepositoryWebrefWebrefAnnotationStats", "name": "docWeight", "summary_de": "Wie viel Gewicht dieses Dokument erhält, wenn seine Annotationsdaten mit anderen zusammengeführt werden."}
+{"module": "RepositoryWebrefWebrefAnnotationStats", "name": "ngramContext", "summary_de": "Scores für Phrasen rund um eine Entitätserwähnung, gewichtet nach Dokumentgewicht."}
+{"module": "RepositoryWebrefWebrefEntityRelationship", "name": "linkWeight", "summary_de": "Stärke der Verbindung zwischen zwei auf der Seite gefundenen Entitäten."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "categoryConfidenceE2", "summary_de": "Wie sicher das System bei einer der Seite zugewiesenen Kategorie ist (0 bis 100)."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "categoryEncodedMid", "summary_de": "Der Seite zugeordnete Kategorie-Entitäts-IDs."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "confidenceE2", "summary_de": "Konfidenzscores für jede auf der Seite gefundene Entität."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "encodedMid", "summary_de": "Die auf der Seite gefundenen Entitäten, sortiert danach, wie zentral sie sind."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "isAuthorIndex", "summary_de": "Welche Entitäten der Seite ihre Autoren sind."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "isPublisherIndex", "summary_de": "Welche Entitäten der Seite ihre Herausgeber sind."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "referencePageIndex", "summary_de": "Markiert die Seite als Haupt-Referenzseite für eine oder mehrere Entitäten."}
+{"module": "RepositoryWebrefWebrefMustangAttachment", "name": "topicalityE2", "summary_de": "Wie zentral jede Entität für die Seite ist, bewertet von 0 bis 100."}
+{"module": "ResearchScienceSearchNavboostQueryInfo", "name": "impCount", "summary_de": "Geschätzte Anzahl, wie oft diese Seite für diese Anfrage angezeigt wurde."}
+{"module": "ResearchScienceSearchNavboostQueryInfo", "name": "lccCount", "summary_de": "Geschätzte Anzahl der langen Klicks (Long Clicks) für diese Anfrage-Seite-Kombination."}
+{"module": "ResearchScienceSearchNavboostQueryInfo", "name": "query", "summary_de": "Der Anfragetext, zu dem diese Klickzahlen gehören."}
+{"module": "ResearchScienceSearchNavboostQueryInfo", "name": "queryCount", "summary_de": "Wie oft diese Anfrage insgesamt gesehen wurde."}
+{"module": "ResearchScienceSearchNavboostQueryInfo", "name": "queryDocCount", "summary_de": "Anzahl der langen Klicks für genau dieses Anfrage-Seite-Paar."}
+{"module": "ResearchScienceSearchReconciledMetadata", "name": "topSalientTermLabel", "summary_de": "Die markantesten Begriffe, die beschreiben, worum es im Seiteninhalt geht."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "indexTier", "summary_de": "In welchen Indexstufen das Dokument gespeichert ist."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "languageCode", "summary_de": "Die erkannte Sprache des Dokuments."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "latestPageUpdateDate", "summary_de": "Das Datum auf der Seite, das widerspiegelt, wann der Inhalt veröffentlicht wurde."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "navboostQuery", "summary_de": "Die Liste der Anfragen und Klickzahlen, die für die Seite erfasst wurden."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "pagerankNs", "summary_de": "Der aktuelle (Live-)PageRank-Wert des Dokuments."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "petacatInfo", "summary_de": "Themenklassifizierungen der Webseite durch den Petacat-Klassifikator."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "scholarInfo", "summary_de": "Aus Google Scholar abgeleitete Daten pro Seite, die an die Websuche übergeben werden."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "sporeGraphMid", "summary_de": "Auf der Seite erkannte Entitäten, die im wissenschaftlichen Knowledge Graph existieren."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "title", "summary_de": "Der Titel des Dokuments."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfo", "name": "webrefEntity", "summary_de": "Auf der Seite erkannte Entitäten, übernommen aus dem Hauptdatensatz des Dokuments."}
+{"module": "ResearchScienceSearchSourceUrlDocjoinInfoWebrefEntityInfo", "name": "mid", "summary_de": "Die Knowledge-Graph-Kennung einer auf der Seite gefundenen Entität."}
+{"module": "SafesearchVideoContentSignals", "name": "videoClassifierOutput", "summary_de": "Die kombinierte Ausgabe der SafeSearch-Klassifikatoren für ein Video."}
+{"module": "ScienceCitation", "name": "Anchors", "summary_de": "Der Ankertext rund um einen Zitationslink auf der verweisenden Seite."}
+{"module": "ScienceCitationAnchor", "name": "count", "summary_de": "Wie oft dieser Ankertext vorkommt."}
+{"module": "ScienceCitationAnchor", "name": "text", "summary_de": "Die Wörter im Ankertext, der auf das Dokument zeigt."}
+{"module": "ScienceCitationAnchor", "name": "weight", "summary_de": "Ein Gewicht von 1 bis 128 für den Anker, je nach Herkunft."}
+{"module": "ScienceCitationUnionCatalog", "name": "NumLibraries", "summary_de": "Wie viele Bibliotheken dieses Werk besitzen; als nützlich fürs Ranking vermerkt."}
+{"module": "ScienceIndexSignal", "name": "IndexSelectionScore", "summary_de": "Ein Score, ob die Seite in den Hauptindex oder den Zusatzindex (Supplemental) gehört."}
+{"module": "ScienceIndexSignal", "name": "NumBackwardLinks", "summary_de": "Wie viele Links auf das Dokument zeigen."}
+{"module": "ScienceIndexSignal", "name": "PublicationYear", "summary_de": "Das Erscheinungsjahr des Artikels."}
+{"module": "ScienceIndexSignal", "name": "VisiblePrefixTerms", "summary_de": "Eine Schätzung, wie viel des Dokuments die meisten Leser tatsächlich zu sehen bekommen."}
+{"module": "SentenceBoundaryAnnotationsInstance", "name": "toIndex", "summary_de": "Markiert, welche Annotationen für die Indexierung ausgewählt wurden."}
+{"module": "ShingleSource", "name": "numShingles", "summary_de": "Wie viele Text-Fingerabdrücke des Dokuments aus dieser Quelle stammen."}
+{"module": "ShingleSource", "name": "timestamp", "summary_de": "Wann diese Quelle erstmals gesehen wurde."}
+{"module": "SnapshotSnapshotMetadata", "name": "crawlTimestamp", "summary_de": "Der Abrufzeitpunkt der Hauptdatei der Seite in Sekunden seit 1970."}
+{"module": "SocialPersonalizationKnexAnnotationItem", "name": "mid", "summary_de": "Die Kennung des Themas, mit dem ein Inhalt oder ein Nutzerprofil markiert ist."}
+{"module": "TeragoogleDocumentInfo", "name": "averageTermWeight", "summary_de": "Durchschnittsgewicht der Begriffe im Dokument, zur Skalierung der Begriffsgewichtung."}
+{"module": "TrawlerFetchReplyDataCrawlDates", "name": "NotChangedDate", "summary_de": "Zeitstempel des letzten tatsächlichen Abrufs der Seite aus dem Web."}
+{"module": "TrawlerFetchReplyDataCrawlDates", "name": "OriginalCrawlDate", "summary_de": "Zeitstempel des ursprünglichen Crawls der Seite."}
+{"module": "TrawlerFetchReplyDataCrawlDates", "name": "ReuseDate", "summary_de": "Zeitstempel der letzten Prüfung, bei der die Seite unverändert war."}
+{"module": "VideoContentSearchVideoInfo", "name": "crapsData", "summary_de": "Gespeicherte Klick- und Impressionsdaten der Videoseite."}
+{"module": "VideoContentSearchVideoInfo", "name": "navqueries", "summary_de": "Anfragen, die für dieses Video als navigationale Suchen gelten."}
+{"module": "VideoContentSearchVideoInfo", "name": "nsr", "summary_de": "Der gespeicherte Website-Qualitätsscore der Seite, die das Video hostet."}
+{"module": "VideoContentSearchVideoInfo", "name": "numViews", "summary_de": "Wie oft das Video angesehen wurde."}
+{"module": "VideoContentSearchVideoInfo", "name": "salientTermSet", "summary_de": "Die Menge der Begriffe, die auf der Seite als am wichtigsten gelten."}
+{"module": "VideoContentSearchVideoInfo", "name": "uniqueChromeViews", "summary_de": "Wie viele eindeutige Chrome-Besuche die Seite erhalten hat."}
+{"module": "VideoContentSearchVideoInfo", "name": "webrefEntities", "summary_de": "Personen, Orte und Dinge, die der Entitätsdienst im Dokument erkannt hat."}
+{"module": "WWWDocInfo", "name": "isSoftporn", "summary_de": "Ob das Dokument als Softporno klassifiziert wurde."}
+{"module": "WWWDocInfo", "name": "additionalSafesearchStats", "summary_de": "Zusätzliche Statistiken des Erwachseneninhalts-Klassifikators für dieses Dokument."}
+{"module": "WWWDocInfo", "name": "languageTag", "summary_de": "Die wahrscheinlichste Sprache des Dokuments."}
+{"module": "WWWDocInfo", "name": "pornStats", "summary_de": "Statistiken zu Erwachseneninhalten für Porno-Abwertung und -Filterung."}
+{"module": "WWWDocInfo", "name": "nsrSitechunk", "summary_de": "Der Website-Gruppierungsschlüssel des Website-Qualitätssystems, teils auf Kanal-Ebene."}
+{"module": "WWWDocInfo", "name": "qualityWithoutAdjustment", "summary_de": "Der Qualitätsscore des Dokuments vor Anpassungen."}
+{"module": "WWWDocInfo", "name": "isPorn", "summary_de": "Ob das Dokument als pornografisch klassifiziert wurde."}
+{"module": "WWWDocInfo", "name": "isSitePorn", "summary_de": "Ob die gesamte Website als pornografisch klassifiziert wurde."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "dimeScore", "summary_de": "Ein Modellscore, wie ansprechend (engaging) ein Bild ist."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "eqStar", "summary_de": "Ein Score für die emotionale Wirkung eines Bildes, z. B. wie inspirierend es aussieht."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "estRelevance", "summary_de": "Eine Schätzung, wie nützlich das Bild für die Anfrage ist, von themenfremd bis sehr nützlich."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "estSigmaU", "summary_de": "Eine Unsicherheitsschätzung, abgeleitet aus dem Bild-Nützlichkeitsscore."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "humanModelScore", "summary_de": "Ein Modellscore zu im Bild abgebildeten Personen, aus dem visuellen Shopping-Tagging."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "pornSignals", "summary_de": "Gepackte Erwachseneninhalts-Annotationen des Bildes."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "safeForUniversal", "summary_de": "Ob das Bild nicht auf der Sperrliste für Bildergebnisse steht."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "salience", "summary_de": "Wie wichtig das Bild für die Seite ist, auf der es erscheint."}
+{"module": "WWWResultInfoSubImageDocInfo", "name": "tqStar", "summary_de": "Ein Score für die technische Qualität eines Bildes, z. B. Schärfe und Belichtung."}
+{"module": "WeboftrustTimeRange", "name": "startUnixTime", "summary_de": "Der Startzeitpunkt des relevanten Zeitfensters eines Live-Ergebnisses."}
