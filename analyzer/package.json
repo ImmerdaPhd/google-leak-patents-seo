@@ -1,0 +1,16 @@
+{
+  "name": "google-core-signals-analyzer",
+  "version": "1.0.0",
+  "description": "Schätzt die 58 Kern-Ranking-Signale aus dem Google-Leak für eine URL (Playwright + optional Gemini).",
+  "type": "module",
+  "bin": { "core-signals": "analyze.js" },
+  "scripts": {
+    "analyze": "node analyze.js",
+    "test": "node test/selftest.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  },
+  "license": "MIT"
+}

@@ -60,6 +60,17 @@ What does the leak actually store about site authority
 Which patent describes how Google classifies a good click
 ```
 
+## Score a URL against the 58 core signals
+
+`analyzer/` estimates every core signal for a live URL: one file per signal in
+`analyzer/factors/`, Playwright for rendering, optional Google Gemini for judgement calls, and a
+weighted overall score. See [analyzer/README.md](analyzer/README.md) (German).
+
+```bash
+cd analyzer && npm install && npx playwright install chromium
+GEMINI_API_KEY=... node analyze.js https://www.example.com --out report.md
+```
+
 ## Query the data directly
 
 Python 3, no dependencies.
